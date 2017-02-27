@@ -1,0 +1,33 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue","小塚ゴシック";
+    background: #EBEFF1;
+    background-image: url(../img/home_top.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+header{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+
+/*home*/
+.main_parent{
+    text-align: center;
+}
+
+/*main*/
+.main:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    visibility:hidden;
+}
+
+

@@ -1,0 +1,137 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue","小塚ゴシック";
+    background: #ffffff;
+}
+/*---contact---*/
+/**--コンタクト--**/
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.clear{
+    clear: both;
+}
+.contact h2{
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+.contact{
+    margin: auto;
+    padding: 0;
+    width: 92%;
+}
+
+.contact_form{
+    padding: 50px;
+    margin: 20px;
+    display: block;
+    border: 1px solid #808080;
+    border-top: 10px solid #031E36;
+    box-shadow: 0px -5px #B7A380;
+}
+
+.contact_box{
+    width: 450px;
+    float: left;
+}
+.contact_box_right{
+    margin-left: 100px;
+}
+.contact_heading{
+    font-size: 3rem;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.contact_name{
+    font-size: 1.5rem;
+    width: 80%;
+    height: 40px !important;
+    margin-bottom: 20px;
+}
+.contact_email{
+    font-size: 1.5rem;
+    width: 80%;
+    height: 40px !important;
+    margin-bottom: 20px;
+}
+.contact_subject{
+    font-size: 1.5rem;
+    width: 80%;
+    height: 40px !important;
+}
+.contact_message{
+    font-size: 1.5rem;
+    width: 700px !important;
+    height: 300px !important;
+}
+
+input[type="submit"]
+{
+    margin-top: 50px;
+    border: none;
+    font-size: 1.5rem;
+    padding-right: 100px;
+    padding: 0.2em 0.4em;
+    background: #031E36;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    cursor: pointer;
+}
+input[type="submit"]:hover
+{
+    transition: 0.15s;
+    background-color: #B7A380;
+}
+
+
+
+.contact_thanks{
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: right;
+    margin-top: 2px;
+    border-top: 2px;
+    font-size: 2rem;
+    display: block;
+}
+
+
+.wpcf7-validation-errors {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #E53935;
+    padding:20px !important;
+    margin:0px 10px;
+    border: none !important;
+}
+
+
+.wpcf7-mail-sent-ok {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    background-color:#031E36;
+    padding:20px !important;
+    margin:0px 10px;
+    border: none !important;
+}
+
+
+

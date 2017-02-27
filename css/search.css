@@ -1,0 +1,30 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue","小塚ゴシック";
+    background: #EBEFF1;
+}
+header{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.jyoken{
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 1.6em;
+    text-align: left;
+    color:  #031E36;
+}
+
+.kekka{
+    margin-top: 20px;
+    font-size: 3em;
+
+}
+
+.random .search_grid{
+    margin-top: 0;
+}
