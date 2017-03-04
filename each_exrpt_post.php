@@ -18,7 +18,24 @@
             }else{
                 echo $cat1->slug;
             } ?>">
-                <?php echo $cat1->cat_name; ?>
+                <?php if($cat1->parent){echo $cat1->cat_name;} ?>
+            </span>
+<!--なぜか二つ目はエラーになる-->
+            <span class="<?php if($cat2->parent){
+                $parent = get_category($cat2->parent);
+                echo $parent->slug;
+            }else{
+                echo $cat2->slug;
+            } ?>">
+                <?php if($cat2->parent){echo $cat2->cat_name;} ?>
+            </span>
+            <span class="<?php if($cat3->parent){
+                $parent = get_category($cat3->parent);
+                echo $parent->slug;
+            }else{
+                echo $cat3->slug;
+            } ?>">
+                <?php if($cat3->parent){echo $cat3->cat_name;} ?>
             </span>
 
 
