@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .container{
-    height: 1000px;
+    height: 2000px;
 }
 
 /*サークルの画像について*/
@@ -39,20 +39,23 @@ h1,h2,h3,h4,h5,h6 {
     height: 100%;
 }
 
-
+/*概要！*/
 .overview{
     width: 100%;
     padding-top: 16px;
-
 }
 
+.title{
+    margin-left: 16px;
+}
 .title__name{
     font-size: 1.8rem;
 }
 
 .sns{
     width: 360px;
-    margin-top: 16px auto;
+    margin: 16px auto;
+/*    margin-left: 16px;*/
 
 }
 .sns__item{
@@ -90,17 +93,30 @@ h1,h2,h3,h4,h5,h6 {
 
 .chart{
     width: 80%;
-    height: 100px;
+    height: 200px;
     background: gray;
     margin: 0 auto;
 }
 
+/*コンテンツ*/
 
 
+.contents{
+    padding: 16px;
+}
+.contents h2{
+    font-size: 1.6rem;
+    width: 300px;
+    padding: 20px 3px 10px;
+    border-bottom: #1991ba solid 2px;
+/*    border-bottom-color: #ff656a;*/
+    border-bottom-color: gray;
+}
 
-
-
-
+.contents p{
+    font-size: 1.2rem;
+    padding-top: 16px;
+}
 
 
 
