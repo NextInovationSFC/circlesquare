@@ -14,11 +14,33 @@
 
 
     <div class="overview">
-        <h1 class="title">
-            <?php echo post_custom('name'); ?>
-        </h1>
-        <div class="sns"></div>
-        <div class="chart"></div>
+        <div class="title">
+            <h1 class="title__name">
+                <?php echo post_custom('name'); ?>
+            </h1>
+            <p class="title__tag">テニス</p>
+        </div>
+
+
+        <div class="sns">
+            <?php if(have_posts()): while(have_posts()):the_post(); ?>
+                <a href="<?php echo post_custom('homepage'); ?>" class="sns__item sns__webpage" target="_blank">
+                    <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                </a>
+
+            <a href="<?php echo post_custom('twitter'); ?>" class="sns__item sns__twitter" target="_blank">
+                    <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                </a>
+
+            <a href="<?php echo post_custom('facebook'); ?>" class="sns__item sns__facebook" target="_blank">
+                    <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+                </a>
+            <?php endwhile; endif; ?>
+        </div>
+
+        <div class="chart">
+
+        </div>
     </div>
 
 
