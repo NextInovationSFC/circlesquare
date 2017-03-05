@@ -39,7 +39,7 @@
         </div>
 
         <div class="chart">
-
+            <canvas id="myBarChart" width="800" height="400"></canvas>
         </div>
     </div>
 
@@ -142,5 +142,41 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
+<script>
+    var ctx = document.getElementById("myBarChart");
+    var myBarChart = new Chart(ctx, {
+        //グラフの種類
+        type: 'bar',
+        //データの設定
+        data: {
+            //データ項目のラベル
+            labels: ["ウェイ", "ガヤガヤ", "真剣", "ぐびぐび"],
+            //データセット
+            datasets: [{
+                //凡例
+                label: "雰囲気チャート",
+                //背景色
+                backgroundColor: "rgba(75,192,192,0.4)",
+                //枠線の色
+                borderColor: "rgba(75,192,192,1)",
+                //グラフのデータ
+                data: [4, 10, 6, 4]
+            }]
+        },
+        //オプションの設定
+        options: {
+            //軸の設定
+            scales: {
+                //縦軸の設定
+                yAxes: [{
+                    //目盛りの設定
+                    ticks: {
+                        //開始値を0にする
+                        beginAtZero:true,
+                    }
+                }]
+            }
+        }
+    });
+</script>
 <?php get_footer(); ?>
