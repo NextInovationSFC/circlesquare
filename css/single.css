@@ -73,30 +73,41 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .sns__facebook{
+    background: gray;
+/*
     background: #3b5998;
     border-bottom :#404c66 solid 3px
+*/
 }
 
 .sns__twitter{
+    background: gray;
+/*
     background: #55acee;
     border-bottom: #5698cb solid 3px
+*/
 }
 
 .sns__webpage{
+    background: gray;
+/*
     background: #00c300;
     border-bottom: #40ab40 solid 3px
+*/
 }
 /*facebook 3b5998  border-bottom #404c66 solid 3px*/
 /*twitter #55acee  border-bottom #5698cb solid 3px*/
 /*webpage #00c300  border-bottom #40ab40 solid 3px*/
 
+/*
 
 .chart{
-    width: 80%;
-    height: 200px;
-/*    background: gray;*/
-    margin: 0 auto;
+    width: 350px;
+    height: 150px;
+    background: gray;
+    margin: 48px auto 16px;
 }
+*/
 
 /*コンテンツ*/
 
@@ -124,20 +135,34 @@ h1,h2,h3,h4,h5,h6 {
 @media screen and (min-width:480px) {
     /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
     body{
-        background: blue;
+/*        background: blue;*/
     }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     /*iPadのCSSを記述する*/
 
     body{
-        background: yellow;
+/*        background: yellow;*/
     }
 }
 @media screen and (min-width:1024px) {
     /*PC用のCSSを記述する*/
+    .imageBox{
+        width: 80%;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
 
-    body{
-        background: green;
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
     }
 }

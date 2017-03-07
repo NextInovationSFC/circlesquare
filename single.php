@@ -38,9 +38,11 @@
             <?php endwhile; endif; ?>
         </div>
 
+<!--
         <div class="chart">
             <canvas id="myBarChart" width="800" height="400"></canvas>
         </div>
+-->
     </div>
 
     <div class="contents">
@@ -150,15 +152,16 @@
         //データの設定
         data: {
             //データ項目のラベル
+
             labels: ["ウェイ", "ガヤガヤ", "真剣", "ぐびぐび"],
             //データセット
             datasets: [{
                 //凡例
                 label: "雰囲気チャート",
                 //背景色
-                backgroundColor: "rgba(75,192,192,0.4)",
+                backgroundColor: "rgba(0,0,0,0.4)",
                 //枠線の色
-                borderColor: "rgba(75,192,192,1)",
+                borderColor: "rgba(80,80,80,1)",
                 //グラフのデータ
                 data: [4, 10, 6, 4]
             }]
