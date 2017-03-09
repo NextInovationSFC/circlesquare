@@ -6,6 +6,7 @@
     <title>CircleSquare</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/headerandfooter.css">
     <?php if ( is_front_page() ): ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
