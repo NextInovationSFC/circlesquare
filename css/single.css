@@ -13,6 +13,11 @@ body{
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
 /*サークルの画像について*/
 /*width 375 height 280くらい*/
 /* divタグでクリッピングする*/
@@ -154,6 +159,36 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 1px;
 }
 
+
+.shiki{
+    width: 300px;
+    margin: 0 auto 32px;
+}
+.shiki img{
+
+}
+.spring{
+    margin-top: 32px;
+    width: 100px;
+    float: left;
+}
+.summer{
+    margin-top: 32px;
+    width: 100px;
+    float: left;
+    margin-left: 80px;
+}
+.autumn{
+    margin-top: 32px;
+    width: 100px;
+    float: left;
+}
+.winter{
+    margin-top: 32px;
+    width: 100px;
+    float: left;
+    margin-left: 80px;
+}
 
 
 

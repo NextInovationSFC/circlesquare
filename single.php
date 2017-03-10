@@ -84,49 +84,55 @@
 
         <div class="schedule">
             <h2 class="contents__heading schedule__heading">年間スケジュール</h2>
-            <div class="spring">
-                <p class="spring__description">
-                    <?php
-                    if ( is_array( post_custom('spring') ) ) {
-                        echo implode ( "<br><br>", post_custom('spring') );
-                    }else{
-                        echo post_custom('spring');
-                    }
-                    ?>
-                </p>
-            </div>
-            <div class="summer">
-                <p class="summer__description">
-                    <?php
-                    if ( is_array( post_custom('summer') ) ) {
-                        echo implode ( "<br><br>", post_custom('summer') );
-                    }else{
-                        echo post_custom('summer');
-                    }
-                    ?>
-                </p>
-            </div>
-            <div class="autumn">
-                <p class="autumn__description">
-                    <?php
-                    if ( is_array( post_custom('autumn') ) ) {
-                        echo implode ( "<br><br>", post_custom('autumn') );
-                    }else{
-                        echo post_custom('autumn');
-                    }
-                    ?>
-                </p>
-            </div>
-            <div class="winter">
-                <p class="winter__description">
-                    <?php
-                    if ( is_array( post_custom('winter') ) ) {
-                        echo implode ( "<br><br>", post_custom('winter') );
-                    }else{
-                        echo post_custom('winter');
-                    }
-                    ?>
-                </p>
+            <div class="shiki clearfix">
+                <div class="spring">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Spring.jpg" width = "80" alt="" class="spring__img">
+                    <p class="spring__description">
+                        <?php
+                        if ( is_array( post_custom('spring') ) ) {
+                            echo implode ( "<br><br>", post_custom('spring') );
+                        }else{
+                            echo post_custom('spring');
+                        }
+                        ?>
+                    </p>
+                </div>
+                <div class="summer">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Summer.jpg" width = "80" alt="" class="summer__img">
+                    <p class="summer__description">
+                        <?php
+                        if ( is_array( post_custom('summer') ) ) {
+                            echo implode ( "<br><br>", post_custom('summer') );
+                        }else{
+                            echo post_custom('summer');
+                        }
+                        ?>
+                    </p>
+                </div>
+                <div class="autumn">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Autumn.jpg" width = "80" alt="" class="autumn__img">
+                    <p class="autumn__description">
+                        <?php
+                        if ( is_array( post_custom('autumn') ) ) {
+                            echo implode ( "<br><br>", post_custom('autumn') );
+                        }else{
+                            echo post_custom('autumn');
+                        }
+                        ?>
+                    </p>
+                </div>
+                <div class="winter">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Winter.jpg" width = "80" alt="" class="winter__img">
+                    <p class="winter__description">
+                        <?php
+                        if ( is_array( post_custom('winter') ) ) {
+                            echo implode ( "<br><br>", post_custom('winter') );
+                        }else{
+                            echo post_custom('winter');
+                        }
+                        ?>
+                    </p>
+                </div>
             </div>
         </div>
 
