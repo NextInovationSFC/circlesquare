@@ -13,12 +13,6 @@ body{
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
-
-
-.container{
-    height: 2000px;
-}
-
 /*サークルの画像について*/
 /*width 375 height 280くらい*/
 /* divタグでクリッピングする*/
@@ -39,17 +33,26 @@ h1,h2,h3,h4,h5,h6 {
     height: 100%;
 }
 
+.container{
+    padding: 16px;
+}
+
 /*概要！*/
 .overview{
     width: 100%;
-    padding-top: 16px;
 }
 
-.title{
-    margin-left: 16px;
-}
 .title__name{
-    font-size: 1.8rem;
+    font-size: 2.8rem;
+}
+.title__tag{
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #a9a9a9;
+}
+
+.fa-tags{
+    color: #e63c6e;
 }
 
 .sns{
@@ -59,13 +62,18 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 .sns__item{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
     display: inline-block;
     color: #ffffff;
-    width: 112px;
-    height: 34px;
-    background: blue;
+    width: 98px;
+    height: 44px;
     text-align: center;
     border-radius: 5px;
+    margin-right: 16px;
 }
 .sns a{
     font-size: 2.4rem;
@@ -73,27 +81,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .sns__facebook{
-    background: gray;
-/*
+/*    background: gray;*/
+
     background: #3b5998;
     border-bottom :#404c66 solid 3px
-*/
+
 }
 
 .sns__twitter{
-    background: gray;
-/*
+/*    background: gray;*/
+
     background: #55acee;
     border-bottom: #5698cb solid 3px
-*/
+
 }
 
 .sns__webpage{
-    background: gray;
-/*
+/*    background: gray;*/
+
     background: #00c300;
     border-bottom: #40ab40 solid 3px
-*/
+
 }
 /*facebook 3b5998  border-bottom #404c66 solid 3px*/
 /*twitter #55acee  border-bottom #5698cb solid 3px*/
@@ -111,23 +119,42 @@ h1,h2,h3,h4,h5,h6 {
 
 /*コンテンツ*/
 
-
-.contents{
-    padding: 16px;
-}
 .contents h2{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     width: 300px;
     padding: 20px 3px 10px;
-    border-bottom: #1991ba solid 2px;
+    border-bottom: #5ac8dc solid 2px;
 /*    border-bottom-color: #ff656a;*/
-    border-bottom-color: gray;
+/*    border-bottom-color: gray;*/
+}
+
+
+
+.locationAndDate h2{
+    border-bottom: #e63c6e solid 2px;
+}
+
+.number h2{
+    border-bottom: #78c850 solid 2px;
+}
+
+.cost h2{
+    border-bottom: #fac81e solid 2px;
 }
 
 .contents p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-top: 16px;
 }
+
+
+.about p{
+    font-size: 1.3rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+
 
 
 

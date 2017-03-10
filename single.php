@@ -1,24 +1,20 @@
 <?php get_header(); ?>
 
 
+
+
+<div class="imageBox">
+    <img src="<?php echo wp_get_attachment_image_src ( post_custom('image'), 'full' )[0]; ?>" alt="<?php the_title(); ?>">
+</div>
+
 <div class="container">
-
-    <?php if(have_posts()): while(have_posts()):the_post(); ?>
-    <?php $kataban = post_custom('calendar'); ?>
-    <?php endwhile; endif; ?>
-
-
-    <div class="imageBox">
-        <img src="<?php echo wp_get_attachment_image_src ( post_custom('image'), 'full' )[0]; ?>" alt="<?php the_title(); ?>">
-    </div>
-
 
     <div class="overview">
         <div class="title">
             <h1 class="title__name">
                 <?php echo post_custom('name'); ?>
             </h1>
-            <p class="title__tag">テニス</p>
+            <p class="title__tag"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ・テニス</p>
         </div>
 
 
@@ -37,6 +33,11 @@
                 </a>
             <?php endwhile; endif; ?>
         </div>
+        <div class="about">
+            <p class="about__description">
+                <?php echo post_custom('long'); ?>
+            </p>
+        </div>
 
 <!--
         <div class="chart">
@@ -46,12 +47,7 @@
     </div>
 
     <div class="contents">
-        <div class="about">
-            <h2 class="contents__heading about__heading">活動内容</h2>
-            <p class="about__description">
-                <?php echo post_custom('long'); ?>
-            </p>
-        </div>
+
         <div class="locationAndDate">
             <h2 class="contents__heading locationAndDate__heading">活動日 場所</h2>
             <p class="date__description">
@@ -60,6 +56,7 @@
                 <?php endwhile; endif; ?>
             </p>
             <p class="location__description">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
                 <?php echo post_custom('location'); ?>
                 <?php endwhile; endif; ?>
@@ -67,15 +64,10 @@
 
         </div>
         <div class="number">
-            <h2 class="contents__heading number__heading">人数 男女比</h2>
+            <h2 class="contents__heading number__heading">人数</h2>
             <p class="number__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
                 <?php echo post_custom('number'); ?>
-                <?php endwhile; endif; ?>
-            </p>
-            <p class="ratio__description">
-                <?php if(have_posts()): while(have_posts()):the_post(); ?>
-                <?php echo post_custom('ratio'); ?>
                 <?php endwhile; endif; ?>
             </p>
         </div>
