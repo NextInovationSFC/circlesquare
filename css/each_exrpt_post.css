@@ -1,14 +1,15 @@
+/*　モバイル（iPhone,Android）に関するCSSを記述する*/
 .wrap-col{
-    height: 350px;
+    height: 83%;
     position:relative;
 }
 
 
 .random {
-    padding: 80px 0 0 80px;
-    padding-bottom: 140px;
+    padding: 0 0 140px 0;
     display: block;
-    width: 87%;
+    width: 100%;
+    margin: 0 auto;
 }
 .random_grid {
     margin: 0 auto;
@@ -16,13 +17,13 @@
 }
 .random_grid li {
     display: inline-block;
-    width: 186px;
-    height: 380px;
+    width: 77%;
+    height: 305px;
     padding: 40px 20px 30px;
     background-color: #ffffff;
     box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
     border-radius: 15px;
-    margin: 35px 25px;
+    margin: 20px 20px;
 }
 
 .random_grid a{
@@ -35,17 +36,28 @@
 }
 .random_icon {
     position: absolute;
-    top: 0;
-    width:186px;
-    height:186px;
-    border-radius: 400px;
+    top: -8px;
+    width:100%;
+    height:180px;
     box-shadow: 0px 0px 10px #ccc;
     margin-bottom: 30px;
 }
 
+.random_tags_parent{
+    position:absolute;
+    top: 68%;
+    margin-top: 15px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 1.4rem;
+    color: #031e36;
+    text-align: left;
+    padding: 0 0 0 2%;
+}
+
 .random_name {
     position: absolute;
-    top: 59%;
+    top: 87%;
     width: 100%;
     text-align: center;
     font-size: 2.0rem;
@@ -55,29 +67,105 @@
     margin-bottom: 15px;
 }
 
-/*
-.random_hr{
-    position:absolute;
-    top: 80%;
-}
-*/
 
-hr {
-    position:absolute;
-    top: 80%;
-    width: 100%;
-    border-width: 4px 0px 0px 0px; /* 太さ */
-    border-style: solid; /* 線種 */
-    border-color: #b7a380;   /* 線色 */
-    height: 1px;         /* 高さ(※古いIE用) */
-}
 .random_description {
     position:absolute;
-    top: 82%;
+    top: 92%;
     margin-top: 15px;
     width: 100%;
     line-height: 30px;
     font-size: 1.4rem;
     color: #031e36;
+}
+
+/*スラッグがクラス名になる*/
+.sports,.evevt,.social-activity,.hobby{
+    margin: 0 2% 0 0;
+}
+@media screen and (min-width:480px) {
+    /*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
+
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　iPadのCSSを記述する*/
+}
+@media screen and (min-width:1024px) {
+    /*　PC用のCSSを記述する　*/
+    .wrap-col{
+        height: 350px;
+        position:relative;
+    }
+
+
+    .random {
+        padding: 80px 0 140px 0px;
+        display: block;
+        width: 97%;
+        margin: 0 auto;
+    }
+    .random_grid {
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    .random_grid li {
+        display: inline-block;
+        width: 300px;
+        height: 317px;
+        padding: 40px 20px 30px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
+        border-radius: 15px;
+        margin: 35px 33px;
+    }
+
+    .random_grid a{
+        text-decoration: none;
+    }
+
+    .random_grid li:hover{
+        box-shadow: 0 2px 10px 2px rgba(0,0,0,0.26);
+        transition: 0.1s;
+    }
+    .random_icon {
+        position: absolute;
+        top: -19px;
+        width: 100%;
+        height:186px;
+        /*    border-radius: 400px;*/
+        box-shadow: 0px 0px 10px #ccc;
+        margin-bottom: 30px;
+    }
+
+    .random_tags_parent{
+        position:absolute;
+        top: 46%;
+        margin-top: 15px;
+        width: 100%;
+        line-height: 30px;
+        font-size: 1.4rem;
+        color: #031e36;
+    }
+
+    .random_name {
+        position: absolute;
+        top: 61%;
+        width: 100%;
+        text-align: center;
+        font-size: 3.0rem;
+        font-weight: 200;
+        letter-spacing: 5px;
+        color: #b7a380;
+        margin-bottom: 15px;
+    }
+
+    .random_description {
+        position:absolute;
+        top: 68%;
+        margin-top: 15px;
+        width: 100%;
+        line-height: 30px;
+        font-size: 1.6rem;
+        color: #031e36;
+    }
 }
 
