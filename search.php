@@ -19,8 +19,9 @@ if($catnum){
 }
         ?>
 
-        <div class="jyoken">
-            <?php if($s){ ?>検索キーワード：<?php echo $s; } ?>
+        <div class="search-result">
+           <div class="search-result-text">
+            <?php if($s){ ?>「<?php echo $s; } ?>」の検索結果
             <?php if (is_array($catnum)) { ?>カテゴリ : <?php
             foreach($catnum as $val){
                 if ($val === end($catnum)) {
@@ -31,7 +32,7 @@ if($catnum){
             }
         }
             ?>
-            <div class="kekka">検索結果</div>
+            </div>
         </div>
 
         <?php query_posts( array(

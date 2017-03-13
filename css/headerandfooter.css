@@ -11,6 +11,270 @@
 
 
 
+
+/*Wordpress管理バーの位置がズレる対策*/
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed!important;
+    }
+}
+
+
+
+@media screen and (min-width: 980px) {
+    header{
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        position: relative;
+        height: 90px;
+    }
+
+    .nav{
+        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+        font-size: 1.5rem;
+        float: left;
+    }
+
+    .nav .pic{
+        height: 70px;
+        display: block;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    .menu{
+        float: right;
+        margin-right: 80px;
+        margin-top: 40px;
+    }
+
+
+    .menu-list {
+        overflow:hidden;
+    }
+
+    .menu-list li{
+        float: left;
+    }
+
+    .menu-list-home{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/home.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .menu-list-about{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/about.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .menu-list-contact{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/contact.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .menu-btn{
+
+    }
+
+    .tooltip-btn{
+
+    }
+
+    .search-tag-sport{
+        height: 40px;
+        width: 115px;
+        display: block;
+        background: url(../img/cat1.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .search-tag-social{
+        height: 40px;
+        width: 115px;
+        display: block;
+        background: url(../img/cat2.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .search-tag-hobby{
+        height: 40px;
+        width: 115px;
+        display: block;
+        background: url(../img/cat3.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .search-tag-event{
+        height: 40px;
+        width: 115px;
+        display: block;
+        background: url(../img/cat4.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .search{
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        position: relative;
+        height: 60px;
+    }
+
+    .search-tag {
+        margin-left: 60px;
+    }
+
+    .search-tag li{
+        margin-top: 10px;
+        float: left;
+        padding-right: 10px;
+    }
+
+    /*検索キーワードボックス*/
+    .searchform {
+        width: 250px;
+        background: url(../img/searchbox.png) left top no-repeat;
+        display: block;
+        height: 58px;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        position: absolute;
+        top: 2px;
+        right: 80px;
+    }
+    .keywords  {
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        border: 1px solid #FFF;
+    }
+
+    input {
+        font-size: 100%;
+    }
+    .searchBtn {
+        position: absolute;
+        width: 30px;
+        top: 12px;
+        right: 20px;
+    }
+
+}
+@media screen and (max-width: 979px) {
+
+    header{
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        position: relative;
+        height: 50px;
+    }
+
+    .nav{
+        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .nav .pic{
+        height: 40px;
+        display: block;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    #menu,#search{
+        color: #fff;
+        background-color: #333333;
+    }
+
+    .menu-btn{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        display: block;
+        background: url(../img/ham.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        margin: 5px;
+    }
+
+    .tooltip-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        display: block;
+        background: url(../img/search.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        margin: 5px;
+    }
+
+    .menu-list-home{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/home_w.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .menu-list-about{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/about_w.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .menu-list-contact{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/contact_w.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .menu-list-twiiter{
+        height: 41px;
+        width: 130px;
+        display: block;
+        background: url(../img/twiiter_w.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+}
+
+
+
+/*
+
 header img{
     display: block;
     float: left;
@@ -18,8 +282,11 @@ header img{
     margin-left: 40px;
 }
 
+*/
+
 /* メニュー */
 
+/*
 .nav{
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
     float: right;
@@ -63,9 +330,11 @@ header img{
     color: #031E36 ;
 }
 
+*/
 
 /* メガメニュー */
 
+/*
 li.nav__mega ul.nav__category {
     color: #4B4B4B;
     visibility: hidden;
@@ -133,9 +402,12 @@ li.nav__mega form.nav-search > li:nth-child(-n+3) {
 }
 */
 
+*/
 
 /* 検索方法テキスト*/
 
+
+/*
 li.nav__mega form.nav-search .nav___textSearch{
     width: 100px;
     font-size: 0.8rem;
@@ -150,10 +422,12 @@ li.nav__mega form.nav-search .nav___cateSearch{
 }
 
 
-
+*/
 
 /* サーチ条件ボタン */
 
+
+/*
 li.nav__mega ul.nav__category .nav___search{
     float: right;
     display:inline-flex;
@@ -174,7 +448,7 @@ li.nav__mega ul.nav__category .nav___search{
 
 
 .nav___btnSearch .nav-search_req {
-    
+
     padding: 0em 0.4em;
     width: 120px;
     height: 40px;
@@ -200,9 +474,11 @@ li.nav__mega form.nav-search .nav___btnSearch li{
     margin: 0 10px;
 }
 
-
+*/
 
 /* 検索ボックス */
+
+/*
 
 li.nav__mega .nav___typeSearch {
     background: url(../img/input4.gif) left top no-repeat;
@@ -228,11 +504,11 @@ li.nav__mega .nav___typeSearch {
 }
 */
 
-
+*/
 
 
 /* チェックボックス */
-
+/*
 
 .nav__category label {
     position: relative;
@@ -244,6 +520,7 @@ li.nav__mega .nav___typeSearch {
 
 
 /* サーチ下矢印 */
+/*
 
 .init-bottom:after {
     content: '';
@@ -260,6 +537,8 @@ li.nav__mega .nav___typeSearch {
 .init-bottom:hover {
     color: #ffffff;
 }
+
+
 
 /*フッター*/
 

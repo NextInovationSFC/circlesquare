@@ -4,7 +4,12 @@
 <div class="main_parent">
     <div class="main clearfix">
 
+        <div class="search-result">
+            <div class="search-result-text">
+                「<?php single_cat_title(); ?>」の検索結果
 
+            </div>
+        </div>
 
         <div class="random">
             <div id="random" class="random_grid">
