@@ -1,0 +1,42 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #f9f9f9;
+}
+
+.container{
+    padding: 16px;
+}
+
+.card{
+    box-sizing: border-box;
+    position: relative;
+    height: 240px;
+    width: 343px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+}
+
+
+.card__heading{
+    margin-left: 32px;
+    font-size: 3.0rem;
+}
+
+.card__description{
+    margin-top: 32px;
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+
+.card__image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 162px;
+    height: 162px;
+}
