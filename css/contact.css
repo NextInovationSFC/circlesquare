@@ -7,7 +7,7 @@ body{
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    background: #ffffff;
+    background: #f9f9f9;
     font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro';
 }
 /*---contact---*/
@@ -156,5 +156,76 @@ input[type="submit"]
 
 }
 @media screen and (min-width:1024px) {
+    .heading{
+        /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        background: none;
+        color: #272727;
+        height: 36px;
+        line-height: 36px;
+        padding: 16px;
+        width: auto;
+        margin-left: 88px;
+        margin-right: 88px;
+        border-bottom: 3px solid #272727;
+    }
+    .contact{
+        padding-left: 188px;
+        padding-right: 188px;
+        padding-top: 32px;
+    }
+
+    .contact p{
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+    .contact__form{
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 32px;
+        padding-left: 88px;
+        padding-right: 88px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
+
+
+    .contact_name{
+        width: 600px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    .contact_email{
+        width: 600px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+
+    .contact_message{
+        width: 600px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+
+
+
+    input[type="submit"]
+    {
+        border: none;
+        font-size: 1.8rem;
+        background: #272727;
+        color: #ffffff;
+        border-radius: 20px;
+        width: 320px;
+        height: 44px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
 
 }
