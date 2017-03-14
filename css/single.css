@@ -1,3 +1,8 @@
+/*モバイル(iPhone,Android)に関するCSSを記述する*/
+
+/*BEMについて 単語の区切りはキャメルケースで書く blockとelementの関係は__ blockとmodifierの区切りは_ */
+
+
 html {
     font-size: 62.5%;
 }
@@ -10,192 +15,154 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/* 10px */
-/*
-50#FFF8E1
-100#FFECB3
-200#FFE082
-300#FFD54F
-400#FFCA28
-500#FFC107
-600#FFB300
-700#FFA000
-800#FF8F00
-900#FF6F00
-*/
-
-
-/* ボーダー */
-
-.nav hr{
-    margin: 15px 0;
-}
-
-.nav hr.nav_bottomHr{
-    margin-bottom: 0;
-}
-
-
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    height: 2000px;
 }
 
-
-
-/* contents */
-.wrapper{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 900px;
-    /*     height: 60rem; */
-    background-color: #FFFFFF;
-    color: #031E36;
-    margin: 0 auto;
-}
-
-.hero2{
-    border: 1px solid #272727;
+/*サークルの画像について*/
+/*width 375 height 280くらい*/
+/* divタグでクリッピングする*/
+.imageBox{
     width: 100%;
-    position:relative;
-    border-bottom: 10px solid #031E36;
-    box-shadow: 0px 5px #B7A380;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
 }
-.hero2 img{
-    width: 800px;
-    background: #031E36;
-    margin: 0 auto;
-}
-.caption{
-    border: 1px solid #272727;
-    position:absolute;
-    top: 50px;
-    right: 40px;
-    width: 300px;
-    padding-bottom: 10px;
-    background-color: rgba(255,255,255,0.6);
-    text-align: center;
-}
-.caption_title{
-    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
-    font-weight: 400;
-    font-size: 3rem;
-    letter-spacing: 0.4rem;
-    color: #031E36;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-/* .caption_line {
-margin-bottom: 25px;
-border: none;
-width: 80%;
-border-top: 2px #B7A380 solid;
-} */
-
-.caption_box{
-    margin: 0 auto;
-    width: 75%;
-    margin-bottom: 20px;
-}
-.caption_description{
-    color: #031E36;
-    letter-spacing: 0.6rem;
-    line-height: 2.1rem;
-    font-size: 1.1rem;
+.imageBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
 }
 
+/*概要！*/
+.overview{
+    width: 100%;
+    padding-top: 16px;
+}
 
-
+.title{
+    margin-left: 16px;
+}
+.title__name{
+    font-size: 1.8rem;
+}
 
 .sns{
-    margin: 30px auto;
-    display: flex;
-    width: 400px;
-    flex-direction:row;
-    justify-content:space-around;
+    width: 360px;
+    margin: 16px auto;
+/*    margin-left: 16px;*/
+
 }
-.sns_item{
-    display: block;
-    font-size: 3.8rem;
-    color: #031E36;
+.sns__item{
+    display: inline-block;
+    color: #ffffff;
+    width: 112px;
+    height: 34px;
+    background: blue;
+    text-align: center;
+    border-radius: 5px;
 }
-.sns_item:hover{
-    color: #B7A380;
+.sns a{
+    font-size: 2.4rem;
+    padding-top: 10px;
 }
+
+.sns__facebook{
+    background: gray;
+/*
+    background: #3b5998;
+    border-bottom :#404c66 solid 3px
+*/
+}
+
+.sns__twitter{
+    background: gray;
+/*
+    background: #55acee;
+    border-bottom: #5698cb solid 3px
+*/
+}
+
+.sns__webpage{
+    background: gray;
+/*
+    background: #00c300;
+    border-bottom: #40ab40 solid 3px
+*/
+}
+/*facebook 3b5998  border-bottom #404c66 solid 3px*/
+/*twitter #55acee  border-bottom #5698cb solid 3px*/
+/*webpage #00c300  border-bottom #40ab40 solid 3px*/
+
+/*
+
+.chart{
+    width: 350px;
+    height: 150px;
+    background: gray;
+    margin: 48px auto 16px;
+}
+*/
+
+/*コンテンツ*/
+
 
 .contents{
-    margin: 50px auto 0;
-    display: flex;
-    width: 80%;
-    flex-direction:row;
-    justify-content: center;
-    justify-content: flex-start;
-    /*  justify-content:space-around; */
-    flex-wrap:wrap;
+    padding: 16px;
 }
-.contents_card{
-    background: #ffffff;
-    height: 185px;
-    width: 220px;
-    padding: 8px;
-    /* border-bottom: 5px solid; */
-    /* border-radius: 9px; */
-    text-align: center;
-    padding-top: 25px;
-}
-.contents_border-bottom{
-    border-bottom: 2px solid #031E36;
-}
-.contents_border-right{
-    border-right: 2px solid #031E36;
-
-}
-.contents_icon{
-    letter-spacing: 1rem;
-    font-size: 5rem;
-}
-.contents_heading{
-    letter-spacing: 1rem;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-.contents_title{
-    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 'ヒラギノ角ゴ Pro W6','Hiragino Kaku Gothic Pro';
-    font-weight: 700;
-}
-.contents_email{
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.contents_line {
-    margin-bottom: 25px;
-    border: none;
-    width: 50%;
-    border-top: 3px #031E36 solid;
-}
-
-.contents_img{
-    margin: 30px auto 0;
-}
-
-.contents_info{
-    margin: 0 auto;
-    width: 750px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-
-.contents_info_article{
-    width: 300px;
-    font-size: 2.5rem;
-
-}
-.description{
-    text-align: center;
+.contents h2{
     font-size: 1.6rem;
-    letter-spacing: 1rem;
+    width: 300px;
+    padding: 20px 3px 10px;
+    border-bottom: #1991ba solid 2px;
+/*    border-bottom-color: #ff656a;*/
+    border-bottom-color: gray;
 }
 
-/* footer */
+.contents p{
+    font-size: 1.2rem;
+    padding-top: 16px;
+}
+
+
+
+
+@media screen and (min-width:480px) {
+    /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
+    body{
+/*        background: blue;*/
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*iPadのCSSを記述する*/
+
+    body{
+/*        background: yellow;*/
+    }
+}
+@media screen and (min-width:1024px) {
+    /*PC用のCSSを記述する*/
+    .imageBox{
+        width: 80%;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+}

@@ -2,9 +2,11 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>CircleSquare</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/headerandfooter.css">
     <?php if ( is_front_page() ): ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
@@ -31,8 +33,10 @@
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                                 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-90163165-1', 'auto');
+
+        ga('create', 'UA-93385820-1', 'auto');
         ga('send', 'pageview');
+
     </script>
 
 

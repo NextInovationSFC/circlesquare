@@ -2,132 +2,92 @@ html{
     font-size: 62.5%;
 }
 body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Helvetica Neue","小塚ゴシック";
-    background: #ffffff;
+    background: #f9f9f9;
+    font-family: 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro';
 }
-/*---policy---*/
-
-
+/*---contact---*/
+/**--コンタクト--**/
 .clearfix:after {
     content: "";
     clear: both;
     display: block;
 }
-
 .clear{
     clear: both;
 }
 
-.policy{
-    padding: 0;
-}
 
-.policy .policy_title{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    font-weight: 100;
-    letter-spacing: 0.5rem;
-    margin-bottom: 50px;
-    font-size: 2rem;
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    width: 100%;
-    padding: 20px;
-}
-
-.policy_sentence{
-    margin: auto;
-    font-size: 1.2rem;
-    line-height: 3rem;
-    width: 92%;
-    letter-spacing: 0.2rem;
-    line-height: 4.8rem;
-}
-
-.policy_heading{
-    font-size: 2rem;
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    margin-top: 50px;
-    margin-bottom: 30px;
+.heading{
+    /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
     font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    background: #272727;
+    color: #ffffff;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
 }
 
-/*　モバイル（iPhone,Android）に関するCSSを記述する*/
+.policy{
+    background: #f9f9f9;
+    color: #272727;
+    padding: 16px;
+    padding-bottom: 32px;
+}
+
+.policy p{
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+.policy h3{
+    margin-top: 12px;
+    font-size: 1.8rem;
+    line-height: 36px;
+}
 
 @media screen and (min-width:480px) {
-/*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
 
 }
-@media screen and (min-width:768px) and ( max-width:1024px) {
-/*　iPadのCSSを記述する*/
-.policy{
-    margin: auto;
-    padding: 16px ;
-    width: 100%;
-}
+@media screen and (min-width:768px) and (max-width:1024px) {
 
-  .policy .policy_title{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    letter-spacing: 0.5rem;
-    margin-left: 30px;
-    margin: 50px;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align:left;
-    color: #000;
-    background-color: #fff;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .policy_sentence{
-      margin: auto;
-      font-size: 1.6rem;
-      line-height: 3rem;
-      width: 92%;
-      letter-spacing: 0.2rem;
-      line-height: 3.8rem;
-  }
-
-  .policy_heading{
-      font-size: 3rem;
-      margin-left: 30px;
-  }
 }
 @media screen and (min-width:1024px) {
-/*　PC用のCSSを記述する　*/
-.policy{
-    margin: auto;
-    padding: 0;
-    width: 92%;
-}
+    .heading{
+        /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        background: none;
+        color: #272727;
+        height: 36px;
+        line-height: 36px;
+        padding: 16px;
+        width: auto;
+        margin-left: 88px;
+        margin-right: 88px;
+        border-bottom: 3px solid #272727;
+    }
+    .policy{
+        padding-left: 188px;
+        padding-right: 188px;
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
+    .policy p{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .policy h3{
+        margin-top: 36px;
+        font-size: 2.0rem;
+        line-height: 40px;
+    }
 
-  .policy .policy_title{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    letter-spacing: 0.5rem;
-    margin-left: 30px;
-    margin: 50px;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align:left;
-    color: #000;
-    background-color: #fff;
-    width: 100%;
-    padding: 0px;
-  }
 
-  .policy_sentence{
-      margin: auto;
-      font-size: 1.6rem;
-      line-height: 3rem;
-      width: 92%;
-      letter-spacing: 0.2rem;
-      line-height: 3.2rem;
-  }
-
-  .policy_heading{
-      font-size: 3rem;
-      margin-left: 30px;
-  }
 }
