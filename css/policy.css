@@ -2,132 +2,230 @@ html{
     font-size: 62.5%;
 }
 body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Helvetica Neue","小塚ゴシック";
-    background: #ffffff;
+    background: #f9f9f9;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro';
 }
-/*---policy---*/
-
-
+/*---contact---*/
+/**--コンタクト--**/
 .clearfix:after {
     content: "";
     clear: both;
     display: block;
 }
-
 .clear{
     clear: both;
 }
 
-.policy{
-    padding: 0;
+
+.heading{
+    /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    background: #272727;
+    color: #ffffff;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
 }
 
-.policy .policy_title{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    font-weight: 100;
-    letter-spacing: 0.5rem;
-    margin-bottom: 50px;
-    font-size: 2rem;
+.policy{
+    background: #f9f9f9;
+    color: #272727;
+    padding: 16px;
+}
+
+.policy p{
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+
+.contact__form{
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 16px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+
+.contact_name{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    padding-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.20) inset;
+}
+
+.contact_email{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    padding-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.20) inset;
+}
+
+
+.contact_message{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.20) inset;
+}
+
+
+input[type="submit"]
+{
+    border: none;
+    font-size: 1.8rem;
+    background: #272727;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 280px;
+    height: 44px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.wpcf7-validation-errors {
+    font-size: 1.2rem;
+    font-weight: normal;
     text-align: center;
     color: #fff;
-    background-color: #000;
-    width: 100%;
-    padding: 20px;
+    background-color: #E53935;
+    padding:20px !important;
+    margin:0px auto;
+    border: none !important;
 }
 
-.policy_sentence{
-    margin: auto;
+
+.wpcf7-mail-sent-ok {
     font-size: 1.2rem;
-    line-height: 3rem;
-    width: 92%;
-    letter-spacing: 0.2rem;
-    line-height: 4.8rem;
+    text-align: center;
+    color: #fff;
+    background-color:#272727;
+    padding:20px !important;
+    margin:0px auto;
+    border: none !important;
 }
 
-.policy_heading{
-    font-size: 2rem;
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
 
-/*　モバイル（iPhone,Android）に関するCSSを記述する*/
+
 
 @media screen and (min-width:480px) {
-/*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
 
 }
-@media screen and (min-width:768px) and ( max-width:1024px) {
-/*　iPadのCSSを記述する*/
-.policy{
-    margin: auto;
-    padding: 16px ;
-    width: 100%;
-}
+@media screen and (min-width:768px) and (max-width:1024px) {
 
-  .policy .policy_title{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    letter-spacing: 0.5rem;
-    margin-left: 30px;
-    margin: 50px;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align:left;
-    color: #000;
-    background-color: #fff;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .policy_sentence{
-      margin: auto;
-      font-size: 1.6rem;
-      line-height: 3rem;
-      width: 92%;
-      letter-spacing: 0.2rem;
-      line-height: 3.8rem;
-  }
-
-  .policy_heading{
-      font-size: 3rem;
-      margin-left: 30px;
-  }
 }
 @media screen and (min-width:1024px) {
-/*　PC用のCSSを記述する　*/
-.policy{
-    margin: auto;
-    padding: 0;
-    width: 92%;
-}
+    .heading{
+        /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        background: none;
+        color: #272727;
+        height: 36px;
+        line-height: 36px;
+        padding: 16px;
+        width: auto;
+        margin-left: 88px;
+        margin-right: 88px;
+        border-bottom: 3px solid #272727;
+    }
+    .contact{
+        padding-left: 188px;
+        padding-right: 188px;
+        padding-top: 32px;
+    }
 
-  .policy .policy_title{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    letter-spacing: 0.5rem;
-    margin-left: 30px;
-    margin: 50px;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align:left;
-    color: #000;
-    background-color: #fff;
-    width: 100%;
-    padding: 0px;
-  }
+    .contact p{
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+    .contact__form{
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 32px;
+        padding-left: 88px;
+        padding-right: 88px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
 
-  .policy_sentence{
-      margin: auto;
-      font-size: 1.6rem;
-      line-height: 3rem;
-      width: 92%;
-      letter-spacing: 0.2rem;
-      line-height: 3.2rem;
-  }
 
-  .policy_heading{
-      font-size: 3rem;
-      margin-left: 30px;
-  }
+    .contact_name{
+        width: 600px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    .contact_email{
+        width: 600px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+
+    .contact_message{
+        width: 600px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+
+
+
+    input[type="submit"]
+    {
+        border: none;
+        font-size: 1.8rem;
+        background: #272727;
+        color: #ffffff;
+        border-radius: 20px;
+        width: 320px;
+        height: 44px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
