@@ -270,7 +270,9 @@ footer {
     color: #bdbdbd;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.26);
     height: 160px;
-    padding: 32px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 footer a {
@@ -289,7 +291,6 @@ footer a {
 
 
 .footer__nav .footer__nav__main li {
-    width: 100%;
     text-align: center;
 }
 
@@ -300,6 +301,7 @@ footer a {
     color: #bdbdbd;
     font-size: 1.8rem;
     text-decoration: none;
+    margin-right: 15px;
 }
 
 .fa{
@@ -322,11 +324,12 @@ footer a {
 
 .footer__nav .footer__nav__policy li a {
     display: inline-block;
-    height: 44px;
+    height: 32px;
     color: #bdbdbd;
     font-size: 1.2rem;
     text-decoration: none;
 }
+
 
 .copyright {
     text-align: center;
@@ -335,6 +338,13 @@ footer a {
     font-weight: 400;
     letter-spacing: 0.3rem;
     font-size: 1rem;
+}
+
+.footer__nav .footer__nav__main li:first-child {
+    display: none;
+}
+.footer__nav .footer__nav__policy li:first-child {
+    display: none;
 }
 
 @media screen and (min-width:480px) {
@@ -347,72 +357,33 @@ footer a {
 
 @media screen and (min-width:1024px) {
     /*PC用のCSSを記述する*/
-/*
-    footer {
-        font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
-        font-weight: 400;
-        background-color: #c0c0c0;
-        color: #fff;
+    footer{
+        padding-left: 52px;
+        padding-right: 52px;
     }
-    footer p {
-        padding: 15px 0;
-        text-align: center;
-        font-size: 1rem;
+    .footer__nav .footer__nav__main {
+        justify-content: flex-end;
     }
-    .footer_nav {
-        width: 90%;
-        margin: 0 auto;
+
+    .footer__nav .footer__nav__main li {
+        margin-right: 20px;
     }
-    .footer_nav li + li {
-        border: 0px;
+    .footer__nav .footer__nav__main li:first-child {
+        display: block;
+        margin-right: auto;
     }
-    .footer_nav .footer_nav-main li {
-        margin-bottom: 20px;
-        border-top: 0px;
-        border-bottom: 0px;
+    .footer__nav__policy div{
+        display: none;
     }
-    .footer_nav .footer_nav-title {
-        width: 40%;
-        margin: 12px;
-        float: left;
-    }
-    .footer_nav .footer_nav-main {
+    .footer__nav__policy {
         display: flex;
         justify-content: flex-end;
     }
-    .footer_nav .footer_nav-main li {
-        width: 140px;
-        padding: 25px 0 7px 0;
-        text-align: center;
-        margin-bottom: 20px;
+    .footer__nav .footer__nav__policy li:first-child {
+        display: block;
+        margin-right: auto;
+        padding: 0;
     }
-    .footer_nav .footer_nav-main a {
-        color: #fff;
-        font-size: 1.2rem;
-        text-decoration: none;
-    }
-    .footer_nav-policy {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 20px;
-    }
-    .footer_nav .footer_nav-policy li {
-        padding: 2px 0px;
-        text-align: right;
-        margin-bottom: 15px;
-        margin-left: 30px;
-    }
-    .footer_nav .footer_nav-policy li a {
-        color: #fff;
-        font-size: 0.8rem;
-        text-decoration: none;
-    }
-    .copyright {
-        font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
-        font-weight: 400;
-        letter-spacing: 0.3rem;
-        font-size: 1rem;
-        background: #000;
-    }
-*/
+
+
 }
