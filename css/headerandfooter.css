@@ -259,79 +259,82 @@ li.nav__mega .nav___typeSearch {
 /*モバイル(iPhone,Android)に関するCSSを記述する*/
 
 footer {
-    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
-    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+    letter-spacing: 1px;
     background-color: #fff;
     color: #bdbdbd;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.26);
+    height: 160px;
+    padding: 32px;
 }
 
-footer p {
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1.4rem;
+footer a {
+    height: 44px;
 }
 
-.footer_nav {
-    width: 100%;
+.footer__nav {
+    width: auto;
     margin: 0 auto;
 }
 
-.footer_nav .footer_nav-title {
-    display: none;
-}
-
-.footer_nav .footer_nav-main {
+.footer__nav .footer__nav__main {
     display: flex;
     justify-content: center;
 }
 
-.footer_nav .footer_nav-main li {
+
+.footer__nav .footer__nav__main li {
     width: 100%;
-    padding: 25px 0 25px 0;
     text-align: center;
-    margin-bottom: 20px;
-    border-top: 2px;
-    border-bottom: 2px;
-    border-style: solid;
-    border-color: black;
 }
 
-.footer_nav li + li {
-    border-left: 2px solid #222;
-}
 
-.footer_nav .footer_nav-main a {
-    color: #000;
+.footer__nav .footer__nav__main a {
+    display: inline-block;
+    height: 44px;
+    color: #bdbdbd;
     font-size: 1.8rem;
     text-decoration: none;
 }
 
-.footer_nav-policy {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 18px;
+.fa{
+    font-size: 1.8rem;
+    margin-right: 4px;
 }
 
-.footer_nav .footer_nav-policy li {
-    width: 25%;
+
+
+.footer__nav__policy {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__nav .footer__nav__policy li {
+    font-weight: bold;
     padding: 8px;
-    margin-bottom: 15px;
     text-align: center;
 }
 
-.footer_nav .footer_nav-policy li a {
-    color: #000;
+.footer__nav .footer__nav__policy li a {
+    display: inline-block;
+    height: 44px;
+    color: #bdbdbd;
     font-size: 1.2rem;
     text-decoration: none;
 }
 
 .copyright {
+    text-align: center;
+    font-size: 2.0rem;
     font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
     font-weight: 400;
     letter-spacing: 0.3rem;
     font-size: 1rem;
-    background: #000;
 }
 
 @media screen and (min-width:480px) {
@@ -344,6 +347,7 @@ footer p {
 
 @media screen and (min-width:1024px) {
     /*PC用のCSSを記述する*/
+/*
     footer {
         font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
         font-weight: 400;
@@ -410,4 +414,5 @@ footer p {
         font-size: 1rem;
         background: #000;
     }
+*/
 }
