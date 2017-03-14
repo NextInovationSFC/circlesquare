@@ -1,19 +1,24 @@
 <?php get_header(); ?>
 
+<div id="wellcome-tutorial"></div>
+<!--
 <div id="wellcome" class="wellcome">
-    <div class="wellcome-head">
-        Wellcome to Circle Square!!
-    </div>
-    <div class="wellcome-body">
-        このサイトはSFCにおける<br>
-        サークル情報をまとめたWebサイトです。<br>
-        自分にあったサークルを見つけてみよう！
+   <div class="wellcome-content">
+       <button type="button" id="wellcome-delete" value="×"></button>
+        <div class="wellcome-head">
+            Wellcome to Circle Square!!
+        </div>
+        <div class="wellcome-body">
+            このサイトはSFCにおける<br>
+            サークル情報をまとめたWebサイトです。<br>
+            自分にあったサークルを見つけてみよう！
+        </div>
     </div>
 </div>
+-->
 
 <div class="main_parent">
     <div class="main clearfix">
-
         <div class="random">
             <div id="random" class="random_grid">
                 <?php query_posts('orderby=rand');?>
@@ -21,7 +26,6 @@
                 <?php endwhile;endif;?>
             </div>
         </div>
-
     </div>
 </div>
 

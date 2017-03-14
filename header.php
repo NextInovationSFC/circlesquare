@@ -28,16 +28,22 @@
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jQuery.js"></script>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
         <!--  一度だけ表示するjs begin  -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php /*echo get_template_directory_uri();*/ ?>/js/jquery.cookie.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                if($.cookie("access")){
-                    $('#wellcome').css({display:'none'});
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.js"></script>
+        <script>
+            $(function () {
+                //cookieの値がonじゃなかったら表示させる
+                if ($.cookie('bnrRead') != 'on') {
+                    $('#wellcome-tutorial').append('<div id="wellcome" class="wellcome"><div class="wellcome-content"><button type="button" id="wellcome-delete" value="×">×</button><div class="wellcome-head">Wellcome to Circle Square!!</div><div class="wellcome-body">このサイトはSFCにおける<br>サークル情報をまとめたWebサイトです。<br>自分にあったサークルを見つけてみよう！</div></div></div>');
                 }
-                $(window).load(function(){
-                    $.cookie("access",$('body').addClass('access'));
-                })
+                //隠すボタンをクリックしたらバナーを隠す
+                $('#wellcome-delete').click(function() {
+                    $('#wellcome').hide();
+                    $.cookie('bnrRead', 'on', { //cookieにbnrReadという名前でonという値をセット
+                        expires: 7, //cookieの有効日数
+                        path:'/' //有効にするパス
+                    });
+                });
             });
         </script>
         <!--  一度だけ表示するjs end  -->
