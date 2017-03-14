@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'brandonBold';
+    src: url('../font/BrandonGrotesque-Bold.eot');
+    src: url('../font/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'), url('../font/BrandonGrotesque-Bold.woff') format('woff'), url('../font/BrandonGrotesque-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'brandonRegular';
+    src: url('../font/BrandonGrotesque-Regular.eot');
+    src: url('../font/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'), url('../font/BrandonGrotesque-Regular.woff') format('woff'), url('../font/BrandonGrotesque-Regular.ttf') format('truetype');
+}
