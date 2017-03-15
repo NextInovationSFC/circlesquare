@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
     <?php elseif ( is_page('about') ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
+    <?php elseif ( is_404() ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/notfound.css">
     <?php endif; ?>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jQuery.js"></script>
