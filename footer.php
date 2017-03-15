@@ -9,11 +9,11 @@
 
          <ul class="footer_nav-main">
              <li><i class="fa fa-home fa-2x" aria-hidden="true"></i>
-               <a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
+               <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
              <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-               <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">CONTACT</a></li>
+               <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Contact</a></li>
              <li><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
-               <a href="<?php echo esc_url( home_url( '/' ) ); ?>about">このサイトについて</a></li>
+               <a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
          </ul>
          <ul class="footer_nav-policy">
              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>sitepolicy">サイトポリシー</a></li>
