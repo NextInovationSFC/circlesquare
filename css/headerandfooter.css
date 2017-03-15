@@ -268,7 +268,7 @@ footer{
 font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
 font-weight: 400;
 background-color: #fff;
-color: #c0c0c0;
+color: #bdbdbd;
 }
 
 footer p{
@@ -310,7 +310,7 @@ border-left: 2px solid #222;
 }
 
 .footer_nav .footer_nav-main a {
-color: #c0c0c0;
+color: #bdbdbd;
 font-size: 1.2rem;
 text-decoration: none;
 padding: 8px;
@@ -332,7 +332,7 @@ text-align: center;
 }
 
 .footer_nav .footer_nav-policy li a{
-color: #c0c0c0;
+color: #bdbdbd;
 font-size: 1.2rem;
 text-decoration: none;
 }
@@ -362,7 +362,7 @@ font-size: 0.8rem;
 footer{
     font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
     font-weight: 400;
-    color: #c0c0c0;
+    color: #bdbdbd;
 }
 
 footer p{
@@ -403,7 +403,7 @@ border-bottom: 0px;
      padding: 16px;
      font-size: 2.4rem;
      text-decoration: none;
-     color: #c0c0c0;
+     color: #bdbdbd;
     display: block;
  }
 
@@ -428,7 +428,7 @@ border-bottom: 0px;
 }
 
 .footer_nav .footer_nav-main a {
-    color: #c0c0c0;
+    color: #bdbdbd;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -448,7 +448,7 @@ border-bottom: 0px;
 
 .footer_nav .footer_nav-policy li a{
 
-    color: #c0c0c0;
+    color: #bdbdbd;
     font-size: 0.8rem;
     text-decoration: none;
 }
