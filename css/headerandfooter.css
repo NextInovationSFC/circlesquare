@@ -174,7 +174,7 @@ li.nav__mega ul.nav__category .nav___search{
 
 
 .nav___btnSearch .nav-search_req {
-    
+
     padding: 0em 0.4em;
     width: 120px;
     height: 40px;
@@ -263,11 +263,106 @@ li.nav__mega .nav___typeSearch {
 
 /*フッター*/
 
+/*　モバイル（iPhone,Android）に関するCSSを記述する*/
+footer{
+font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+font-weight: 400;
+background-color: #fff;
+color: #c0c0c0;
+}
+
+footer p{
+padding: 15px 0;
+text-align: center;
+font-size: 1.4rem;
+}
+
+.footer_nav{
+width: 100%;
+margin: 0 auto;
+font-weight: bold;
+}
+
+.footer_nav .footer_nav-title{
+display: none;
+}
+
+.footer_nav .footer_nav-main{
+display: flex;
+justify-content : center;
+font-family: brandonBold;
+
+}
+
+.footer_nav .footer_nav-main li{
+width: 100%;
+padding: 25px 0 25px 0 ;
+text-align: center;
+margin-bottom: 20px;
+border-top: 2px;
+border-bottom: 2px;
+border-style: solid;
+border-color: black;
+}
+
+.footer_nav li + li {
+border-left: 2px solid #222;
+}
+
+.footer_nav .footer_nav-main a {
+color: #c0c0c0;
+font-size: 1.2rem;
+text-decoration: none;
+padding: 8px;
+}
+
+.footer_nav-policy{
+display: flex;
+justify-content : center;
+margin-bottom: 20px;
+margin-top: 16px;
+}
+
+.footer_nav .footer_nav-policy li{
+width: 35%;
+padding: 8px;
+margin-bottom: 16px;
+text-align: center;
+
+}
+
+.footer_nav .footer_nav-policy li a{
+color: #c0c0c0;
+font-size: 1.2rem;
+text-decoration: none;
+}
+
+
+
+.copyright{
+font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+font-weight: 400;
+letter-spacing: 0.2rem;
+font-size: 0.8rem;
+}
+
+
+@media screen and (min-width:480px) {
+/*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+/*　iPadのCSSを記述する*/
+}
+
+
+
+@media screen and (min-width:1024px) {
+/*　PC用のCSSを記述する　*/
+
 footer{
     font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
     font-weight: 400;
-    background-color: #031E36 ;
-    color: #ffffff;
+    color: #c0c0c0;
 }
 
 footer p{
@@ -281,46 +376,91 @@ footer p{
     margin: 0 auto;
 }
 
+.footer_nav li + li {
+  border: 0px;
+}
+
+.footer_nav .footer_nav-main li{
+margin-bottom: 20px;
+border-top: 0px;
+border-bottom: 0px;
+}
+
+
+ .footer_nav .footer_nav-title{
+     width: 40%;
+     margin: 12px;
+     float: left;
+     display: block;
+     float: left;
+     font-family: brandonBold;
+     font-weight: bold;
+}
+
+ .footer_nav .footer_nav-title .footer_nav-title-cirlce{
+     text-align: left;
+     margin: 0px;
+     padding: 16px;
+     font-size: 2.4rem;
+     text-decoration: none;
+     color: #c0c0c0;
+    display: block;
+ }
+
+ .footer_nav .footer_nav-title .footer_nav-title-email{
+     text-align: left;
+     margin: 0px;
+     padding: 12px;
+     display: block;
+ }
+
 .footer_nav .footer_nav-main{
     display: flex;
     justify-content : flex-end;
 }
 
 .footer_nav .footer_nav-main li{
-    width: 140px;
-    padding: 25px 0 7px 0 ;
+    width: auto;
+    padding: 24px;
+    padding-bottom: 8px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .footer_nav .footer_nav-main a {
-    color: #fff;
-    font-size: 1.4rem;
+    color: #c0c0c0;
+    font-size: 1rem;
     text-decoration: none;
 }
 
 .footer_nav-policy{
-    float: right;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content : flex-end;
+    margin-bottom: 1px;
+    margin-right: 32px;
 }
 
 .footer_nav .footer_nav-policy li{
     padding: 2px 0px;
     text-align: right;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .footer_nav .footer_nav-policy li a{
 
-    color: #fff;
-    font-size: 0.5rem;
+    color: #c0c0c0;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
 .copyright{
     font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
     font-weight: 400;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
     font-size: 1rem;
-    background: black;
+    background: #fff;
+}
+
+
+
 }
