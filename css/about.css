@@ -1,0 +1,131 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue","小塚ゴシック";
+    background: #ffffff;
+}
+
+/*---policy---*/
+
+/*　モバイル（iPhone,Android）に関するCSSを記述する*/
+.about{
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.about .about_head{
+  min-height: 40%;
+  background-image: url(../img/about_head.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about .about_sentence{
+  margin: 40px;
+
+}
+
+.about .about_sentence h2{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.4rem;
+
+  padding: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 10px;
+}
+
+
+
+.about .about_member{
+  margin: 40px;
+
+  padding: 40px;
+  border-top: 2px;
+  border-style: solid;
+  border-color: #ccc;
+
+}
+
+.about .about_member .about_member-icon{
+  font-size: 3.2rem;
+  display: table;
+}
+
+.about .about_member .about_member-icon h3{
+  display: table-cell;
+}
+
+.about .about_member .about_member-card{
+  margin: auto;
+  display: table;
+  margin-top: 20px;
+}
+
+.about .about_member .about_member-card .member{
+  display: block;
+  float: left;
+
+  margin: 12px;
+  margin-bottom: 48px;
+  width: 240px;
+  height: 240px;
+
+  border: solid 0px;
+
+}
+
+.about .about_member .about_member-card .member .member_photo{
+  height: 160px;
+  width: 160px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 80px;
+  margin-bottom: 20px;
+
+}
+
+.about .about_member .about_member-card .member .name{
+  border-bottom: solid 1px;
+}
+
+.about .about_member .about_member-card .member p{
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+
+@media screen and (min-width:480px) {
+/*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
+.about .about_head{
+  min-height: 70%;
+  background-image: url(../img/about_head.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+/*　iPadのCSSを記述する*/
+}
+@media screen and (min-width:1024px) {
+/*　PC用のCSSを記述する　*/
+.about .about_head{
+  min-height: 70%;
+  background-image: url(../img/about_head.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
