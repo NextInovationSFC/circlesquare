@@ -20,6 +20,7 @@
                     }else{
                         echo $cat1->slug;
                     } ?>">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
                         <?php if($cat1->parent){echo $cat1->cat_name;} ?>
                     </span>
         <!--なぜか二つ目はエラーになる-->
