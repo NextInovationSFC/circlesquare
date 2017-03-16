@@ -12,6 +12,7 @@
                     $cat1 = $cats[0];
                     $cat2 = $cats[1];
                     $cat3 = $cats[2];
+                    $cat4 = $cats[3];
                     ?>
 
                     <span class="<?php if($cat1->parent){
@@ -20,16 +21,16 @@
                     }else{
                         echo $cat1->slug;
                     } ?>">
-                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        <?php if($cat1->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
                         <?php if($cat1->parent){echo $cat1->cat_name;} ?>
                     </span>
-        <!--なぜか二つ目はエラーになる-->
                     <span class="<?php if($cat2->parent){
                         $parent = get_category($cat2->parent);
                         echo $parent->slug;
                     }else{
                         echo $cat2->slug;
                     } ?>">
+                        <?php if($cat2->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
                         <?php if($cat2->parent){echo $cat2->cat_name;} ?>
                     </span>
                     <span class="<?php if($cat3->parent){
@@ -38,7 +39,18 @@
                     }else{
                         echo $cat3->slug;
                     } ?>">
+                        <?php if($cat3->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
                         <?php if($cat3->parent){echo $cat3->cat_name;} ?>
+                    </span>
+                    <span class="<?php if($cat4->parent){
+                        $parent = get_category($cat4->parent);
+                        echo $parent->slug;
+                    }else{
+                        echo $cat4->slug;
+                    } ?>">
+                        <?php if($cat4->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
+
+                        <?php if($cat4->parent){echo $cat4->cat_name;} ?>
                     </span>
 
 
