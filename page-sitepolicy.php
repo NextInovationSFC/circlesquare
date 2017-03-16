@@ -2,10 +2,9 @@
 
 <section class="policy">
 
-    <h2>・サイトポリシー・</h2>
-     <div class="policy_form">
+    <h2 class="policy_title">・サイトポリシー・</h2>
+     <div class="policy_sentence">
 <div class="screen-reader-response"></div>
-<section class="policy_sentence">
 
 <p>
 <p>当サイト (circle-square.sfc.keio.ac.jp) は、『Webデザインとマネジメント』授業内におけるチーム「NEXT INNOVATION」が運営しているサイトです。
@@ -27,7 +26,7 @@
 <p>個人的な利用やその他著作権法によって認められる場合を除き、当方の事前の許可なく、これらの情報を使用 (複製、改変、配布等を含む)することを禁止します。</p>
 <p>また、各サークルに関する情報は、サークル代表者様及び新刊実行委員様のご協力のもと、掲載しております。</p>
      </div>
- </section></div>
+ </div>
 
  </section>
 
