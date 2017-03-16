@@ -63,7 +63,7 @@
     padding: 0 0 0 16px;
     text-align: left;
     font-size: 2.4rem;
-    font-family: brandonRegular;
+    font-family: "ヒラギノ角ゴ ProN W6","ヒラギノ角ゴ Pro W6";
     letter-spacing: 5px;
     color: #b7a380;
     margin-bottom: 15px;
@@ -82,12 +82,13 @@
     color: #031e36;
     padding: 0 16px 0 16px;
     text-align: left;
-    font-family: brandonRegular;
+    font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ ProN W3";
 }
 
 /*スラッグがクラス名になる*/
 .sports,.evevt,.social-activity,.hobby{
     margin: 0 2% 0 0;
+    font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ ProN W3";
 }
 .sports i{
     color: #E63C6E;
@@ -176,7 +177,7 @@
         padding: 0 0 0 16px;
         text-align: left;
         font-size: 2.4rem;
-        font-family: brandonRegular;
+        font-family: "ヒラギノ角ゴ ProN W6","ヒラギノ角ゴ Pro W6";
         letter-spacing: 5px;
         color: #b7a380;
         margin-bottom: 15px;
@@ -195,7 +196,7 @@
         color: #031e36;
         padding: 0 16px 0 16px;
         text-align: left;
-        font-family: brandonRegular;
+        font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ ProN W3";
     }
 }
 
