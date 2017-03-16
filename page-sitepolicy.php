@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
     <h2 class="heading">サイトポリシー</h2>
     <div class="policy">
 
@@ -22,3 +21,4 @@
 
 
     <?php get_footer(); ?>
+
