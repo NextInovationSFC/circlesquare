@@ -10,10 +10,6 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
 }
-header{
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-}
 
 
 /*home*/
@@ -28,9 +24,4 @@ header{
     height: 0;
     font-size:0;
     visibility:hidden;
-}
-
-
-@media screen and (max-width: 636px){
-
 }

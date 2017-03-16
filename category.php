@@ -6,7 +6,7 @@
 
         <div class="search-result">
             <div class="search-result-text">
-                「<?php single_cat_title(); ?>」の検索結果
+                「<i class="fa fa-tags " aria-hidden="true"></i><?php single_cat_title(); ?>」の検索結果（全<?php echo $wp_query->found_posts; ?>件）
 
             </div>
         </div>
@@ -15,7 +15,10 @@
             <div id="random" class="random_grid">
                 <?php query_posts('orderby=rand');?>
                 <?php if(have_posts()):while(have_posts()):the_post(); get_template_part('each_exrpt_post');?>
-                <?php endwhile;endif;?>
+                <?php endwhile; else : ?>
+
+                <div class="noHit"></div>
+                <?php endif; wp_reset_query(); ?>
             </div>
         </div>
 

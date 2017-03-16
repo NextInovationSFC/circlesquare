@@ -10,8 +10,6 @@
 }
 
 
-
-
 /*Wordpress管理バーの位置がズレる対策*/
 @media screen and (max-width: 600px) {
     #wpadminbar {
@@ -20,18 +18,19 @@
 }
 
 @media screen and (min-width: 980px) {
+
+
     header{
         text-align: center;
         background-color: #ffffff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-        position: relative;
+        position: static;
         height: 90px;
+        z-index: 4;
     }
 
     .nav{
         font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
         font-size: 1.5rem;
-        float: left;
     }
 
     .nav .pic{
@@ -41,10 +40,12 @@
         margin-left: 50px;
     }
 
-    .menu{
+    .side-menu{
         float: right;
+        position: static;
         margin-right: 80px;
         margin-top: 40px;
+        z-index: 5;
     }
 
 
@@ -83,12 +84,24 @@
         background-size: 100%;
     }
 
+    .menu-list-twitter{
+        display: none;
+    }
+
     .menu-btn{
 
     }
 
     .tooltip-btn{
 
+    }
+
+    .search-tag li:nth-child(1){
+        display: none;
+    }
+
+    .search-tag li:nth-child(3){
+        display: none;
     }
 
     .search-tag-sport{
@@ -136,7 +149,7 @@
     }
 
     .search-tag {
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     .search-tag li{
@@ -158,17 +171,15 @@
         right: 80px;
     }
     .keywords  {
-        width: 200px;
+        width: 190px;
         height: 30px;
         position: absolute;
         top: 12px;
-        left: 15px;
+        left: 18px;
         border: 1px solid #FFF;
     }
 
-    input {
-        font-size: 100%;
-    }
+
     .searchBtn {
         position: absolute;
         width: 30px;
@@ -177,21 +188,78 @@
     }
 
 }
+
 @media screen and (max-width: 979px) {
+
+
+    /* サイドオープン時にメインコンテンツを覆う部分 */
+    .overlay {
+        content: '';
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0);
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        z-index: 4;
+    }
+
+    .side-open .overlay {
+        visibility: visible;
+    }
+
+
+    /* サイドメニュー ※リストのスタイルは省略 */
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: #333333;
+        color: #fff;
+        z-index: 1;
+    }
+
+    /* メインコンテンツ */
+    .wrapper {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #F8F8F8;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        z-index: 2;
+        padding-top:50px;
+    }
+
+
+    /* サイドメニューオープン */
+    .side-open .wrapper,
+    .side-open .overlay{
+        -webkit-transform: translate3d(300px, 0, 0);
+        transform: translate3d(300px, 0, 0);
+    }
 
     header{
         text-align: center;
         background-color: #ffffff;
         box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-        position: relative;
+        position: fixed;
+        top: 0;
         height: 50px;
-    }
-
-    .nav{
         font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
         font-size: 1.5rem;
         width: 100%;
+        z-index: 100;
     }
+
+    /*ヘッダーロゴ*/
 
     .nav .pic{
         height: 40px;
@@ -200,10 +268,8 @@
         margin: 0 auto;
     }
 
-    #menu,#search{
-        color: #fff;
-        background-color: #333333;
-    }
+
+    /*ヘッダーボタン*/
 
     .menu-btn{
         position: absolute;
@@ -218,53 +284,209 @@
         margin: 5px;
     }
 
-    .tooltip-btn{
+    .search-btn {
         position: absolute;
         right: 0;
         top: 0;
         height: 40px;
         width: 40px;
+        margin: 5px;
         display: block;
         background: url(../img/search.png) no-repeat left top;
         -webkit-background-size: 100%;
         background-size: 100%;
+    }
+
+    .nav .is-clicked{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 40px;
+        width: 40px;
         margin: 5px;
+        display: block;
+        background: url(../img/searchClose.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+
+    .search-tag li a{
+        height: 40px;
+        width: 115px;
+        display: block;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .search-tag-sport{
+        background: url(../img/cat1_w.png) no-repeat left top;
+    }
+
+    .search-tag-social{
+        background: url(../img/cat2_w.png) no-repeat left top;
+    }
+
+    .search-tag-hobby{
+        background: url(../img/cat3_w.png) no-repeat left top;
+    }
+
+    .search-tag-event{
+        background: url(../img/cat4_w.png) no-repeat left top;
+    }
+
+    .search-logo{
+        margin: 20px auto 10px auto;
+        height: 40px;
+        width: 115px;
+        display: block;
+        background: url(../img/search_logo.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .search{
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        position: relative;
+        height: 60px;
+    }
+
+    .search-tag li:nth-child(2){
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+
+
+    }
+
+    .search-tag li:nth-child(3){
+        background: #1E1E1E;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10%;
+        color: #ffffff;
+        font-size: 1.3rem;
+
+    }
+
+    .search-tag li:nth-last-child(-n+4){
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 7%;
+        border-bottom: solid 1px #272727;
+
+    }
+
+    .searchBtn{
+        display: none;
+    }
+
+    /*    検索キーワードボックス*/
+
+    form, input {
+        margin: 0; /* マージンをリセット */
+    }
+    form {
+        position: relative; /* 基準位置とする */
+        width: 100%;
+    }
+    input[type="text"] {
+        background-color: #1E1E1E;
+        border: 0;
+        height: 35px; /* 高さ40px */
+        width: 86%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0 2%;
+        color: #ffffff;
+    }
+
+
+    .cd-primary-nav {
+        /* by default it's hidden - on top of the viewport */
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #333333;
+        z-index: 2;
+        padding: 50px 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: auto;
+        /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .cd-primary-nav.is-visible {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    /*メニューリスト*/
+
+    .menu-list{
+        list-style: none;
+        padding-left: 0;
+
+    }
+
+    .menu-list li{
+        border-bottom: solid 1px #272727;
+
+    }
+
+    .menu-list li a{
+        height: 41px;
+        width: 130px;
+        display: block;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        margin-left: 10px;
+    }
+
+    .menu-list li .menu-list-logo{
+        background: url(../img/logo_white.png) no-repeat left top;
+        height: 44px;
+        width: 130px;
+        display: block;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        margin: 0 auto;
+        margin-top: 6px;
     }
 
     .menu-list-home{
-        height: 41px;
-        width: 130px;
-        display: block;
         background: url(../img/home_w.png) no-repeat left top;
-        -webkit-background-size: 100%;
-        background-size: 100%;
     }
 
     .menu-list-about{
-        height: 41px;
-        width: 130px;
-        display: block;
         background: url(../img/about_w.png) no-repeat left top;
-        -webkit-background-size: 100%;
-        background-size: 100%;
     }
 
     .menu-list-contact{
-        height: 41px;
-        width: 130px;
-        display: block;
         background: url(../img/contact_w.png) no-repeat left top;
-        -webkit-background-size: 100%;
-        background-size: 100%;
     }
 
-    .menu-list-twiiter{
-        height: 41px;
-        width: 130px;
-        display: block;
-        background: url(../img/twiiter_w.png) no-repeat left top;
-        -webkit-background-size: 100%;
-        background-size: 100%;
+    .menu-list-twitter{
+        background: url(../img/twitter_w.png) no-repeat left top;
     }
 
 }

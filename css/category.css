@@ -24,3 +24,26 @@ header{
     padding-top: 13px;
     padding-left: 60px;
 }
+
+.noHit{
+    height: 500px;
+    width: 85%;
+    display: block;
+    background: url(../img/noHit_m.png) no-repeat left top;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin: 30px auto 0 auto;
+}
+
+@media screen and (min-width:1024px) {
+    .noHit{
+        height: 500px;
+        width: 800px;
+        display: block;
+        background: url(../img/noHit.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        margin: 0 auto;
+    }
+
+}
