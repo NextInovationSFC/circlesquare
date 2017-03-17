@@ -92,10 +92,10 @@
                             </form>
                         </li>
                         <li >タグ検索</li>
-                        <li><a href="<?php echo get_category_link('8');?>" class="search-tag-sport"></a></li>
-                        <li><a href="<?php echo get_category_link('34');?>" class="search-tag-social"></a></li>
-                        <li><a href="<?php echo get_category_link('35');?>" class="search-tag-hobby"></a></li>
-                        <li><a href="<?php echo get_category_link('20');?>" class="search-tag-event"></a></li>
+                        <li><a href="<?php echo get_category_link('59');?>" class="search-tag-sport"></a></li>
+                        <li><a href="<?php echo get_category_link('49');?>" class="search-tag-social"></a></li>
+                        <li><a href="<?php echo get_category_link('39');?>" class="search-tag-hobby"></a></li>
+                        <li><a href="<?php echo get_category_link('36');?>" class="search-tag-event"></a></li>
                     </ul>
                 </nav>
 
