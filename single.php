@@ -65,9 +65,6 @@
 
         <div class="sns">
             <?php if(have_posts()): while(have_posts()):the_post(); ?>
-            <a href="<?php echo post_custom('homepage'); ?>" class="sns__item sns__webpage" target="_blank">
-                <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-            </a>
 
             <a href="<?php echo post_custom('twitter'); ?>" class="sns__item sns__twitter" target="_blank">
                 <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
@@ -75,6 +72,10 @@
 
             <a href="<?php echo post_custom('facebook'); ?>" class="sns__item sns__facebook" target="_blank">
                 <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+            </a>
+
+            <a href="<?php echo post_custom('homepage'); ?>" class="sns__item sns__webpage" target="_blank">
+                <i class="fa fa-home fa-fw" aria-hidden="true"></i>
             </a>
             <?php endwhile; endif; ?>
         </div>
