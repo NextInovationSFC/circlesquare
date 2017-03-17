@@ -11,6 +11,10 @@ header{
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
+.main_parent {
+    text-align: center;
+}
+
 
 .search-result{
     font-size: 14px;
@@ -23,6 +27,7 @@ header{
 .search-result-text{
     padding-top: 13px;
     padding-left: 60px;
+    text-align: left;
 }
 
 
@@ -46,6 +51,10 @@ header{
         width: 100%;
         top: 50px;
         z-index: 1;
+    }
+
+    .main .random{
+        margin-top: 50px;
     }
 
 }

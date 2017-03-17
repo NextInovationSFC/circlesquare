@@ -22,10 +22,5 @@
     </div>
 </div>
 
-<div id="pageTop-btn" class="pageTop-btn">
-    <a href="#"><i class="fa fa-chevron-up"></i></a>
-</div>
-
-
 
 <?php get_footer(); ?>

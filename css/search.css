@@ -22,6 +22,7 @@ header{
 .search-result-text{
     padding-top: 13px;
     padding-left: 60px;
+    text-align: left;
 }
 
 .kekka{
@@ -30,8 +31,10 @@ header{
 
 }
 
-.random .search_grid{
-    margin-top: 0;
+
+
+.main_parent {
+    text-align: center;
 }
 
 @media screen and (max-width: 979px) {
@@ -53,6 +56,10 @@ header{
         width: 100%;
         top: 50px;
         z-index: 1;
+    }
+
+    .main .random{
+        margin-top: 50px;
     }
 
 }

@@ -60,7 +60,7 @@
             <!-- 通常メニュー -->
             <nav class="menu_side" id="menu">
                 <ul class="menu_side-list">
-                    <li><a href="<?php bloginfo('url'); ?>" class="menu_side-list-logo"></a></li>
+                    <li><a href="<?php bloginfo('url'); ?>" class="menu_side-list-logo clearText">CircleSquare  |  サークルスクエア　 SFC生のためのサークル情報サイト</a></li>
                     <li><a href="<?php bloginfo('url'); ?>" class="menu_side-list-home"><div class="menu_side-list-homeImg"></div>Home</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/about" class="menu_side-list-about"><div class="menu_side-list-aboutImg"></div>About</a></li>
                     <li>
