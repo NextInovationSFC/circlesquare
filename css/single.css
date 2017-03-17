@@ -140,33 +140,69 @@ h1,h2,h3,h4,h5,h6 {
 */
 
 /*コンテンツ*/
+/*
+
+.line{
+    display: block;
+    width: 60%;
+    height: 80px;
+    border: 0;
+}
+.red {
+    background-color: #e63c6e;
+}
+.yellow {
+    background-color: #fac81e;
+}
+.green {
+    background-color: #78c850;
+}
+.blue {
+    background-color: #5ac8dc;
+}
+*/
+
 
 .contents h2{
     font-size: 1.8rem;
+    font-weight: bold;
     width: 300px;
-    padding: 20px 3px 10px;
-    border-bottom: #5ac8dc solid 2px;
-/*    border-bottom-color: #ff656a;*/
-/*    border-bottom-color: gray;*/
+/*    padding: 20px 3px 10px;*/
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    line-height: 36px;
+    border-left: #5ac8dc solid 4px;
+    margin-top: 32px;
 }
 
 
 
 .locationAndDate h2{
-    border-bottom: #e63c6e solid 2px;
+    border-left: #e63c6e solid 4px;
 }
 
 .number h2{
-    border-bottom: #78c850 solid 2px;
+    border-left: #78c850 solid 4px;
 }
 
 .cost h2{
-    border-bottom: #fac81e solid 2px;
+    border-left: #fac81e solid 4px;
 }
 
 .contents p{
     font-size: 1.4rem;
     padding-top: 16px;
+    padding-left: 32px;
+}
+
+.schedule p{
+    padding-left: 0px;
+}
+
+.schedule img{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
 }
 
 

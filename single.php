@@ -95,6 +95,7 @@
     <div class="contents">
 
         <div class="locationAndDate">
+<!--            <hr class="line red">-->
             <h2 class="contents__heading locationAndDate__heading">活動日 場所</h2>
             <p class="date__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
@@ -110,6 +111,7 @@
 
         </div>
         <div class="number">
+<!--            <hr class="line green">-->
             <h2 class="contents__heading number__heading">人数</h2>
             <p class="number__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
@@ -119,6 +121,7 @@
         </div>
 
         <div class="cost">
+<!--            <hr class="line yellow">-->
             <h2 class="contents__heading cost__heading">年間費</h2>
             <p class="cost__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
@@ -129,6 +132,7 @@
 
 
         <div class="schedule">
+<!--            <hr class="line blue">-->
             <h2 class="contents__heading schedule__heading">年間スケジュール</h2>
             <div class="shiki clearfix">
                 <div class="spring">
