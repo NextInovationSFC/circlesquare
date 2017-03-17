@@ -25,23 +25,27 @@ body{
     width: auto;
     height: 100%;
 }
-.imageBox .head_copy{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.head_title{
     color: #ffffff;
     text-align: center;
-}
-
-.imageBox .head_title{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W6', sans-serif;
+    font-weight: normal;
+    line-height: 30px;
     position: absolute;
-    top: 60%;
-    left: 50%;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    margin: auto;
 }
 
+.english{
+    font-size: 3rem;
+    font-family: brandonBold;
+    font-weight: normal;
+}
 
 
 /*　モバイル（iPhone,Android）に関するCSSを記述する*/
@@ -56,6 +60,8 @@ body{
     margin-top: 16px;
     font-weight: normal;
 }
+
+
 
 .lineBox{
     margin: 0 auto;
@@ -180,12 +186,13 @@ body{
 
 }
 @media screen and (min-width:1024px) {
-
+/*
     .imageBox{
         overflow: hidden;
-        width: 648px;/* トリミングしたい枠の幅 */
-        height: 280px;/* トリミングしたい枠の高さ */
+        width: 648px;
+        height: 280px;
         position: relative;
+        margin: 0 auto;
     }
     .imageBox img{
         position: absolute;
@@ -194,9 +201,52 @@ body{
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
+*/
+
+    .imageBox{
+        width: 1024px;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+    }
+
+    .head_title{
+        color: #ffffff;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W6', sans-serif;
+        font-weight: normal;
+        line-height: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .english{
+        font-size: 5rem;
+        font-family: brandonBold;
+        font-weight: normal;
+    }
+
+
 
     .about_heading{
         font-size: 3.6rem;
@@ -213,8 +263,15 @@ body{
         font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
     }
 
+
+    .about_member-card{
+        -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+        justify-content:space-between;
+        justify-content:center;
+    }
+
     .member{
-        width: 230px;
+        width: 200px;
         display: block;
         text-decoration: none;
     }
@@ -223,12 +280,6 @@ body{
         width: 144px;
         border-radius: 72px;
     }
-
-    .about_member-card{
-        -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
-        justify-content:space-between;
-    }
-
     .name{
         text-align: center;
         font-size: 2.2rem;
@@ -264,3 +315,10 @@ body{
 
 }
 
+
+
+@media screen and (min-width:1175px) {
+    .member{
+        width: 240px;
+    }
+}

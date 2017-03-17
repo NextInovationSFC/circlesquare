@@ -3,10 +3,7 @@
 
     <div class="imageBox">
         <img src="<?php echo get_template_directory_uri(); ?>/img/home_img.jpg" alt="">
-        <!--
-    <h2 class="head_copy">君とサークルの交差点</h2>
-    <h2 class="head_title">Circle Square</h2>
--->
+        <h2 class="head_title">君とサークルの交差点<br><span class="english">CircleSquare</span></h2>
     </div>
 
 
