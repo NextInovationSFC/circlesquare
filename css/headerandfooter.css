@@ -543,7 +543,7 @@ footer a {
     margin-right: 15px;
 }
 
-.fa{
+.fa-home,fa-envelope,fa-exclamation-circle{
     font-size: 1.8rem;
     margin-right: 4px;
 }
