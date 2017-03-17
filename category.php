@@ -11,9 +11,8 @@
         </div>
 
         <div class="random">
-            <div id="random" class="random_grid search_grid">
+            <div id="random" class="random_grid">
                 <?php if(have_posts()):while(have_posts()):the_post(); get_template_part('each_exrpt_post');?>
-
                 <?php endwhile; ?>
                 <?php else : ?>
                 <div class="noHit"></div>
@@ -22,6 +21,11 @@
         </div>
     </div>
 </div>
+
+<div id="pageTop-btn" class="pageTop-btn">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
 
 
 <?php get_footer(); ?>

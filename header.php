@@ -54,48 +54,56 @@
 <?php wp_head(); ?>
 </head>
     <body>
-
-
             <!-- サイドオープン時メインコンテンツを覆う -->
             <div class="overlay" id="js__overlay"></div>
 
-
             <!-- 通常メニュー -->
-            <nav class="side-menu" id="menu">
-                <ul class="menu-list">
-                    <li><a href="<?php bloginfo('url'); ?>" class="menu-list-logo"></a></li>
-                    <li><a href="<?php bloginfo('url'); ?>" class="menu-list-home"></a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/about" class="menu-list-about"></a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/contact" class="menu-list-contact"></a></li>
-                    <li><a href="https://twitter.com/circle_sq_sfc" class="menu-list-twitter"></a></li>
+            <nav class="menu_side" id="menu">
+                <ul class="menu_side-list">
+                    <li><a href="<?php bloginfo('url'); ?>" class="menu_side-list-logo"></a></li>
+                    <li><a href="<?php bloginfo('url'); ?>" class="menu_side-list-home"><div class="menu_side-list-homeImg"></div>Home</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/about" class="menu_side-list-about"><div class="menu_side-list-aboutImg"></div>About</a></li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/contact" class="menu_side-list-contact">
+                            <div class="menu_side-list-contactImg"></div>
+                                Contact
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/circle_sq_sfc" class="menu_side-list-twitter"><div class="menu_side-list-twitterImg"></div>Twitter</a></li>
                 </ul>
             </nav>
 
-
-
-            <div class="wrapper">
-                <header class = "header clearfix">
-                    <div class="nav">
-                        <a class="menu-btn" id="js__sideMenuBtn"></a>
-                        <a class="cd-primary-nav-trigger search-btn"></a>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Circle Square" class="pic"></a>
+            <div class="header_wrapper">
+                <header class="header clearfix">
+                    <div class="header_nav">
+                        <a class="header_nav-menuBtn" id="js__sideMenuBtn"></a>
+                        <a class="header_nav-searchBtn cd-primary-nav-trigger "></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="clearText">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Circle Square" class="header_nav-logo">
+                        </a>
                     </div>
                 </header>
 
-                <nav class="cd-primary-nav search">
-                    <ul class="search-tag">
-                        <li class="search-logo"></li>
+                <nav class="cd-primary-nav menu_search">
+                    <ul class="menu_search-list">
+                        <li class="menu_search-logo"></li>
                         <li>
-                            <form class="searchform" method="get"  action="<?php bloginfo('home'); ?>">
-                                <input type="text" value="" name="s" id="s" class="keywords" placeholder="検索キーワードを入力 (ex.テニス)">
-                                <input type="image" src="<?php echo get_template_directory_uri(); ?>/img/search.png" width="30" value="検索" class="searchBtn">
+                            <form class="menu_search-form" method="get"  action="<?php bloginfo('home'); ?>">
+                                <input type="text" value="" name="s" id="s" class="menu_search-keywords" placeholder="検索キーワードを入力 (ex.テニス)">
+                                <input type="image" src="<?php echo get_template_directory_uri(); ?>/img/search.png" width="30" value="検索" class="menu_searchBtn">
                             </form>
                         </li>
                         <li >タグ検索</li>
-                        <li><a href="<?php echo get_category_link('59');?>" class="search-tag-sport"></a></li>
-                        <li><a href="<?php echo get_category_link('49');?>" class="search-tag-social"></a></li>
-                        <li><a href="<?php echo get_category_link('39');?>" class="search-tag-hobby"></a></li>
-                        <li><a href="<?php echo get_category_link('36');?>" class="search-tag-event"></a></li>
+                        <li><a href="<?php echo get_category_link('59');?>" class="menu_search-tag-sport"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ</a></li>
+                        <li><a href="<?php echo get_category_link('49');?>" class="menu_search-tag-social"><i class="fa fa-tags " aria-hidden="true"></i>社会活動</a></li>
+                        <li><a href="<?php echo get_category_link('39');?>" class="menu_search-tag-hobby"><i class="fa fa-tags " aria-hidden="true"></i>趣味</a></li>
+                        <li><a href="<?php echo get_category_link('36');?>" class="menu_search-tag-event"><i class="fa fa-tags " aria-hidden="true"></i>イベント</a></li>
+<!--
+                        <li><a href="<?php echo get_category_link('8');?>" class="menu_search-tag-sport"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ</a></li>
+                        <li><a href="<?php echo get_category_link('34');?>" class="menu_search-tag-social"><i class="fa fa-tags " aria-hidden="true"></i>社会活動</a></li>
+                        <li><a href="<?php echo get_category_link('35');?>" class="menu_search-tag-hobby"><i class="fa fa-tags " aria-hidden="true"></i>趣味</a></li>
+                        <li><a href="<?php echo get_category_link('20');?>" class="menu_search-tag-event"><i class="fa fa-tags " aria-hidden="true"></i>イベント</a></li>
+-->
                     </ul>
                 </nav>
 

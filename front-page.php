@@ -3,9 +3,6 @@
 
 <div class="main_parent">
     <div class="main clearfix">
-
-
-
         <div class="random">
             <div id="random" class="random_grid">
                 <?php query_posts('orderby=rand');?>
