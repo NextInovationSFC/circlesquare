@@ -10,6 +10,7 @@
 <div class="container">
 
     <div class="overview">
+       <div class="clearfix">
         <div class="title">
             <h1 class="title__name">
                 <?php echo post_custom('name'); ?>
@@ -79,6 +80,9 @@
             </a>
             <?php endwhile; endif; ?>
         </div>
+
+        </div>
+
         <div class="about">
             <p class="about__description">
                 <?php echo post_custom('long'); ?>
@@ -92,48 +96,47 @@
 -->
     </div>
 
-    <div class="contents">
-
+<div class="contents">
+    <div class="contentsBox">
         <div class="locationAndDate">
-<!--            <hr class="line red">-->
+            <!--            <hr class="line red">-->
             <h2 class="contents__heading locationAndDate__heading">活動日 場所</h2>
             <p class="date__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
-                <?php echo post_custom('calendar'); ?>
-                <?php endwhile; endif; ?>
+                    <?php echo post_custom('calendar'); ?>
+                        <?php endwhile; endif; ?>
             </p>
             <p class="location__description">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
-                <?php echo post_custom('location'); ?>
-                <?php endwhile; endif; ?>
+                    <?php echo post_custom('location'); ?>
+                        <?php endwhile; endif; ?>
             </p>
 
         </div>
         <div class="number">
-<!--            <hr class="line green">-->
+            <!--            <hr class="line green">-->
             <h2 class="contents__heading number__heading">人数</h2>
             <p class="number__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
-                <?php echo post_custom('number'); ?>
-                <?php endwhile; endif; ?>
+                    <?php echo post_custom('number'); ?>
+                        <?php endwhile; endif; ?>
             </p>
         </div>
 
         <div class="cost">
-<!--            <hr class="line yellow">-->
+            <!--            <hr class="line yellow">-->
             <h2 class="contents__heading cost__heading">年間費</h2>
             <p class="cost__description">
                 <?php if(have_posts()): while(have_posts()):the_post(); ?>
-                <?php echo post_custom('money'); ?>
-                <?php endwhile; endif; ?>
+                    <?php echo post_custom('money'); ?>
+                        <?php endwhile; endif; ?>
             </p>
         </div>
-
-
+    </div>
         <div class="schedule">
-<!--            <hr class="line blue">-->
             <h2 class="contents__heading schedule__heading">年間スケジュール</h2>
+            <hr class="line blue">
             <div class="shiki clearfix">
                 <div class="spring">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/Spring.jpg" width = "80" alt="" class="spring__img">
