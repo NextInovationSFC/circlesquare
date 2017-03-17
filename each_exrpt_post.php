@@ -5,7 +5,7 @@
         <div class="wrap-col">
             <div class="random_icon" style="background: url('<?php echo $postImgSrc[0] ?> ') center center;    background-size: cover;"></div>
             <div class="random_content">
-                <h2 class="random_name" style="letter-spacing: 3px;"><?php echo post_custom('name'); ?></h2>
+                <h2 class="random_name"><?php echo post_custom('name'); ?></h2>
                 <div class="random_tags_parent">
                     <?php
                     $cats = get_the_category();
