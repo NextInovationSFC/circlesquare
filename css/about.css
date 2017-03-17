@@ -9,123 +9,316 @@ body{
 
 /*---policy---*/
 
+.imageBox{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.imageBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+.head_title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W6', sans-serif;
+    font-weight: normal;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    margin: auto;
+}
+
+.english{
+    font-size: 3rem;
+    font-family: brandonBold;
+    font-weight: normal;
+}
+
+
 /*　モバイル（iPhone,Android）に関するCSSを記述する*/
 .about{
-  font-weight: 100;
-  letter-spacing: 0.2rem;
-  margin-bottom: 50px;
-  font-size: 1.6rem;
-  line-height: normal;
+  padding: 16px;
 }
 
-.about .about_head{
-  min-height: 40%;
-  background-image: url(../img/about_head.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.about .about_sentence{
-  margin: 40px;
-
-}
-
-.about .about_sentence h2{
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.4rem;
-
-  padding: 20px;
-  border: 2px;
-  border-style: solid;
-  border-color: #ccc;
-  border-radius: 10px;
+.about_heading{
+    font-family: brandonBold;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: normal;
 }
 
 
 
-.about .about_member{
-  margin: 40px;
-
-  padding: 40px;
-  border-top: 2px;
-  border-style: solid;
-  border-color: #ccc;
-
+.lineBox{
+    margin: 0 auto;
+    width: 101px;
+    margin-bottom: 32px;
+}
+.heading_line{
+    text-align: center;
+    display: inline-block;
+    width: 18%;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    height: 2.4px;
+    border: 0;
 }
 
-.about .about_member .about_member-icon{
-  font-size: 3.2rem;
-  display: table;
+
+.about_description{
+    font-size: 1.2rem;
+    line-height: 24px;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
 }
 
-.about .about_member .about_member-icon h3{
-  display: table-cell;
+.member_heading{
+    font-family: brandonBold;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: normal;
 }
 
-.about .about_member .about_member-card{
-  margin: auto;
-  display: table;
-  margin-top: 20px;
+
+.about_member-card{
+    display:-webkit-box;/*--- Androidブラウザ用 ---*/
+    display:-ms-flexbox;/*--- IE10 ---*/
+    display: -webkit-flex;/*--- safari（PC）用 ---*/
+    display:flex;
+    -webkit-box-pack:justify;/*--- Androidブラウザ用 ---*/
+    -ms-flex-pack:justify;/*--- IE10 ---*/
+    -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+    justify-content:space-between;
+    webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    justify-content: center;
 }
 
-.about .about_member .about_member-card .member{
-  display: block;
-  float: left;
-
-  margin: 12px;
-  margin-bottom: 48px;
-  width: 240px;
-  height: 240px;
-
-  border: solid 0px;
-
+.member{
+    width: 156px;
+    display: block;
+    text-decoration: none;
 }
 
-.about .about_member .about_member-card .member .member_photo{
-  height: 160px;
-  width: 160px;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 80px;
-  margin-bottom: 20px;
-
+.member_photo{
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-.about .about_member .about_member-card .member .name{
-  border-bottom: solid 1px;
+
+.name{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #272727;
 }
 
-.about .about_member .about_member-card .member p{
-  text-align: center;
-  padding: 5px;
+.about-circle{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: brandonRegular;
+    color: #7b7b7b;
 }
+
+
+.about-position{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 5px;
+    font-family: brandonBold;
+    color: #272727;
+    margin-bottom: 32px;
+}
+
+.line{
+    display: block;
+    width: 60%;
+    height: 2.4px;
+    border: 0;  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+}
+.red {
+    background-color: #e63c6e;
+}
+.yellow {
+    background-color: #fac81e;
+}
+.green {
+    background-color: #78c850;
+}
+.blue {
+    background-color: #5ac8dc;
+}
+
+
 
 
 
 
 @media screen and (min-width:480px) {
-/*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
-.about .about_head{
-  min-height: 70%;
-  background-image: url(../img/about_head.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 }
-@media screen and (min-width:768px) and ( max-width:1024px) {
-/*　iPadのCSSを記述する*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+
 }
 @media screen and (min-width:1024px) {
-/*　PC用のCSSを記述する　*/
-.about .about_head{
-  min-height: 70%;
-  background-image: url(../img/about_head.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*
+    .imageBox{
+        overflow: hidden;
+        width: 648px;
+        height: 280px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+*/
+
+    .imageBox{
+        width: 1024px;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+    }
+
+    .head_title{
+        color: #ffffff;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W6', sans-serif;
+        font-weight: normal;
+        line-height: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .english{
+        font-size: 5rem;
+        font-family: brandonBold;
+        font-weight: normal;
+    }
+
+
+
+    .about_heading{
+        font-size: 3.6rem;
+        margin-top: 16px;
+    }
+    .about{
+        padding-right: 188px;
+        padding-left: 188px;
+    }
+
+    .about_description{
+        font-size: 1.6rem;
+        line-height: 32px;
+        font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    }
+
+
+    .about_member-card{
+        -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+        justify-content:space-between;
+        justify-content:center;
+    }
+
+    .member{
+        width: 200px;
+        display: block;
+        text-decoration: none;
+    }
+    .member_photo{
+        height: 144px;
+        width: 144px;
+        border-radius: 72px;
+    }
+    .name{
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #272727;
+    }
+
+    .about-circle{
+        margin-top: 8px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: brandonRegular;
+        color: #7b7b7b;
+    }
+
+
+    .about-position{
+        margin-top: 8px;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 5px;
+        font-family: brandonBold;
+        color: #272727;
+        margin-bottom: 32px;
+    }
+
+    .line{
+        display: block;
+        width: 60%;
+        height: 2.4px;
+        border: 0;  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+    }
+
 }
+
+
+
+@media screen and (min-width:1175px) {
+    .member{
+        width: 240px;
+    }
 }
