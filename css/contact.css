@@ -2,9 +2,13 @@ html{
     font-size: 62.5%;
 }
 body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Helvetica Neue","小塚ゴシック";
-    background: #ffffff;
+    background: #f9f9f9;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro';
 }
 /*---contact---*/
 /**--コンタクト--**/
@@ -16,122 +20,212 @@ body{
 .clear{
     clear: both;
 }
-.contact h2{
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    font-weight: 100;
-    letter-spacing: 0.5rem;
-    margin-left: 30px;
-    margin-bottom: 50px;
-    font-size: 2rem;
+
+
+.heading{
+/*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    background: #272727;
+    color: #ffffff;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
 }
+
 .contact{
-    margin: auto;
-    padding: 0;
-    width: 92%;
+    background: #f9f9f9;
+    color: #272727;
+    padding: 16px;
 }
 
-.contact_form{
-    padding: 50px;
-    margin: 20px;
-    display: block;
-    border: 1px solid #808080;
-    border-top: 10px solid #031E36;
-    box-shadow: 0px -5px #B7A380;
+.contact p{
+    font-size: 1.2rem;
+    line-height: 24px;
 }
 
-.contact_box{
-    width: 450px;
-    float: left;
+
+.contact__form{
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 16px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+    margin-top: 24px;
+    margin-bottom: 36px;
 }
-.contact_box_right{
-    margin-left: 100px;
-}
-.contact_heading{
-    font-size: 3rem;
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-}
+
+
 .contact_name{
-    font-size: 1.5rem;
-    width: 80%;
-    height: 40px !important;
-    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    padding-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.20) inset;
 }
+
 .contact_email{
-    font-size: 1.5rem;
-    width: 80%;
-    height: 40px !important;
-    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    padding-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.20) inset;
 }
-.contact_subject{
-    font-size: 1.5rem;
-    width: 80%;
-    height: 40px !important;
-}
+
+
 .contact_message{
-    font-size: 1.5rem;
-    width: 700px !important;
-    height: 300px !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.20) inset;
 }
+
 
 input[type="submit"]
 {
-    margin-top: 50px;
     border: none;
-    font-size: 1.5rem;
-    padding-right: 100px;
-    padding: 0.2em 0.4em;
-    background: #031E36;
+    font-size: 1.8rem;
+    background: #272727;
     color: #ffffff;
     border-radius: 10px;
-    width: 200px;
-    height:50px;
+    width: 280px;
+    height: 44px;
     cursor: pointer;
-}
-input[type="submit"]:hover
-{
-    transition: 0.15s;
-    background-color: #B7A380;
-}
-
-
-
-.contact_thanks{
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-align: right;
-    margin-top: 2px;
-    border-top: 2px;
-    font-size: 2rem;
     display: block;
+    margin: 0 auto;
 }
 
 
 .wpcf7-validation-errors {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: normal;
     text-align: center;
     color: #fff;
     background-color: #E53935;
     padding:20px !important;
-    margin:0px 10px;
+    margin:0px auto;
     border: none !important;
 }
 
 
 .wpcf7-mail-sent-ok {
-    font-size: 2rem;
-    font-weight: normal;
+    font-size: 1.2rem;
     text-align: center;
     color: #fff;
-    background-color:#031E36;
+    background-color:#272727;
     padding:20px !important;
-    margin:0px 10px;
+    margin:0px auto;
     border: none !important;
 }
 
 
 
+
+@media screen and (min-width:480px) {
+
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}
+@media screen and (min-width:1024px) {
+    .heading{
+        /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        background: none;
+        color: #272727;
+        height: 36px;
+        line-height: 36px;
+        padding: 16px;
+        width: auto;
+        margin-left: 88px;
+        margin-right: 88px;
+        border-bottom: 3px solid #272727;
+    }
+    .contact{
+        padding-left: 188px;
+        padding-right: 188px;
+        padding-top: 32px;
+    }
+
+    .contact p{
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+    .contact__form{
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 32px;
+        padding-left: 88px;
+        padding-right: 88px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
+
+
+    .contact_name{
+        width: 600px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    .contact_email{
+        width: 600px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+
+    .contact_message{
+        width: 600px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+
+
+
+    input[type="submit"]
+    {
+        border: none;
+        font-size: 1.8rem;
+        background: #272727;
+        color: #ffffff;
+        border-radius: 20px;
+        width: 320px;
+        height: 44px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+
+}

@@ -6,6 +6,7 @@
     <title>CircleSquare</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/headerandfooter.css">
     <?php if ( is_front_page() ): ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
@@ -23,6 +24,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
     <?php elseif ( is_page('about') ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
+    <?php elseif ( is_404() ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/notfound.css">
     <?php endif; ?>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jQuery.js"></script>
