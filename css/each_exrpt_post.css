@@ -63,8 +63,8 @@
     padding: 0 0 0 16px;
     text-align: left;
     font-size: 2.4rem;
+/*    letter-spacing: -0.8em;*/
     font-family: "ヒラギノ角ゴ ProN W6","ヒラギノ角ゴ Pro W6";
-    letter-spacing: 5px;
     color: #272727;
     margin-bottom: 15px;
 }
@@ -178,7 +178,6 @@
         text-align: left;
         font-size: 2.4rem;
         font-family: "ヒラギノ角ゴ ProN W6","ヒラギノ角ゴ Pro W6";
-        letter-spacing: 5px;
         color: #272727;
         margin-bottom: 15px;
     }
