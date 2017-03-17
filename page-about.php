@@ -36,7 +36,7 @@
     <div class="about_member-card">
 
       <div class="about_member-tatsumu member">
-        <img src="../circlesquare/img/member_tatsumu.jpg" alt="" class="member_photo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/member_tatsumu.jpg" alt="" class="member_photo">
         <p class="name">松井 達夢</p>
         <p class="about-circle red">NaDaRe</p>
         <p class="about-position">Project manager</p>
@@ -44,7 +44,7 @@
       </div>
 
       <div class="about_member-daifuku member">
-        <img src="../circlesquare/img/member_daifuku.jpg" alt="" class="member_photo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/member_daifuku.jpg" alt="" class="member_photo">
         <p class="name">藤木 良祐</p>
         <p class="about-circle yellow">S.A.L.</p>
         <p class="about-position">Engineer leader</p>
@@ -52,7 +52,7 @@
       </div>
 
       <div class="about_member-yuyu member">
-        <img src="../circlesquare/img/member_yuyu.jpg" alt="" class="member_photo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/member_yuyu.jpg" alt="" class="member_photo">
         <p class="name">原 有璃</p>
         <p class="about-circle red">TopDogs</p>
         <p class="about-position">Engineer</p>
@@ -60,21 +60,21 @@
       </div>
 
       <div class="about_member-honami member">
-        <img src="../circlesquare/img/member_honami.jpg" alt="" class="member_photo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/member_honami.jpg" alt="" class="member_photo">
         <p class="name">久保 帆奈美</p>
         <p class="about-circle red">TopDogs</p>
         <p class="about-position">Designer</p>
       </div>
 
       <div class="about_member-a-chan member">
-        <img src="../circlesquare/img/member_a-chan.jpg" alt="" class="member_photo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/member_a-chan.jpg" alt="" class="member_photo">
         <p class="name">村松 明日香</p>
         <p class="about-circle blue">Keio Collection</p>
         <p class="about-position">Designer leader</p>
       </div>
 
       <div class="about_member-kirimi member">
-        <img src="../circlesquare/img/member_kirimi.jpg" alt="" class="member_photo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/member_kirimi.jpg" alt="" class="member_photo">
         <p class="name">沼倉 朋哉</p>
         <p class="about-circle green">ACOGGYZ</p>
         <p class="about-position">Engineer</p>
