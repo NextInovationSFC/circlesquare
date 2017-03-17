@@ -1,0 +1,94 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #f9f9f9;
+}
+
+.container{
+    padding: 16px;
+}
+
+.card{
+    box-sizing: border-box;
+    position: relative;
+    height: 240px;
+    width: 343px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+}
+
+
+.card__heading{
+    margin-left: 32px;
+    font-size: 3.0rem;
+}
+
+.card__description{
+    margin-top: 24px;
+    margin-left: 32px;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+
+.card__image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 162px;
+    height: 162px;
+}
+
+
+
+
+@media screen and (min-width:480px) {
+    /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
+    body{
+        /*        background: blue;*/
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*iPadのCSSを記述する*/
+
+    body{
+        /*        background: yellow;*/
+    }
+}
+@media screen and (min-width:1024px) {
+    /*PC用のCSSを記述する*/
+
+    .container{
+        padding: 188px;
+    }
+    .card{
+        height: 248px;
+        width: 648px;
+        padding-top: 48px;
+    }
+    .card__heading{
+        margin-left: 70px;
+        font-size: 3.0rem;
+    }
+    .card__description{
+        margin-top: 32px;
+        margin-left: 70px;
+        font-size: 2.4rem;
+        line-height: 48px;
+        font-weight: bold;
+    }
+    .card__image{
+        position: absolute;
+        bottom: 0;
+        right: 70px;
+        width: 200px;
+        height: 200px;
+    }
+
+}

@@ -1,3 +1,5 @@
+
+
 <footer>
      <div class="footer_nav">
 
@@ -27,7 +29,10 @@
 
 
 
-  <?php wp_footer(); ?>
+
+
+<?php wp_footer(); ?>
 
 </body>
+
 </html>
