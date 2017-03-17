@@ -119,15 +119,15 @@ li.nav__mega form.nav-search .nav___right li {
 
 /*
 li.nav__mega form.nav-search > li:nth-child(6n+5) {
-    margin: 0 1%;
+margin: 0 1%;
 }
 
 li.nav__mega form.nav-search > li:nth-child(6n-3) {
-    margin-left: 20px;
+margin-left: 20px;
 }
 
 li.nav__mega form.nav-search > li:nth-child(-n+3) {
-    clear: both;
+clear: both;
 }
 */
 
@@ -169,7 +169,6 @@ input[type="button"]:hover {
 }
 
 .nav___btnSearch .nav-search_req {
-
     padding: 0em 0.4em;
     width: 120px;
     height: 40px;
@@ -216,9 +215,9 @@ li.nav__mega .nav___typeSearch {
 
 /*
 .nav-searchBtn {
-    position: absolute;
-    top: 3px;
-    left: 174px;
+position: absolute;
+top: 3px;
+left: 174px;
 }
 */
 
@@ -256,125 +255,28 @@ li.nav__mega .nav___typeSearch {
 
 /*フッター*/
 
-/*　モバイル（iPhone,Android）に関するCSSを記述する*/
-footer{
-font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
-font-weight: 400;
-background-color: #fff;
-color: #bdbdbd;
-}
 
-footer p{
-padding: 15px 0;
-text-align: center;
-font-size: 1.4rem;
-}
+/*モバイル(iPhone,Android)に関するCSSを記述する*/
 
-.footer_nav{
-width: 100%;
-margin: 0 auto;
-font-weight: bold;
-}
-
-.footer_nav .footer_nav-title{
-display: none;
-}
-
-.footer_nav .footer_nav-main{
-display: flex;
-justify-content : center;
-font-family: brandonBold;
-
-}
-
-.footer_nav .footer_nav-main li{
-width: 100%;
-padding: 25px 0 25px 0 ;
-text-align: center;
-margin-bottom: 20px;
-border-top: 2px;
-border-bottom: 2px;
-border-style: solid;
-border-color: black;
-}
-
-.footer_nav li + li {
-border-left: 2px solid #222;
-}
-
-.footer_nav .footer_nav-main a {
-color: #bdbdbd;
-font-size: 1.8rem;
-text-decoration: none;
-padding: 8px;
-}
-
-.footer_nav-policy{
-display: flex;
-justify-content : center;
-margin-bottom: 20px;
-margin-top: 16px;
-}
-
-.footer_nav .footer_nav-policy li{
-width: 35%;
-padding: 8px;
-margin-bottom: 16px;
-text-align: center;
-
-}
-
-.footer_nav .footer_nav-policy li a{
-color: #bdbdbd;
-font-size: 1.2rem;
-text-decoration: none;
-}
-
-
-
-.copyright{
-font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
-font-weight: 400;
-letter-spacing: 0.2rem;
-font-size: 1rem;
-}
-
-
-@media screen and (min-width:480px) {
-/*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
-
-@media screen and (min-width:768px) and ( max-width:1024px) {
-/*　iPadのCSSを記述する*/
-}
-
-
-
-@media screen and (min-width:1024px) {
-/*　PC用のCSSを記述する　*/
-
-footer{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W6','Hiragino Kaku Gothic Pro';
-    font-weight: 400;
-    color: #bdbdbd;
+footer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
     letter-spacing: 1px;
     background-color: #fff;
+    color: #bdbdbd;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.26);
     height: 160px;
-
     padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
-
 }
 
-footer p{
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1rem;
+footer a {
+    height: 44px;
 }
 
 .footer__nav {
@@ -382,105 +284,60 @@ footer p{
     margin: 0 auto;
 }
 
-.footer_nav li + li {
-  border: 0px;
-}
-
-.footer_nav .footer_nav-main li{
-margin-bottom: 20px;
-border-top: 0px;
-border-bottom: 0px;
-}
-
-
- .footer_nav .footer_nav-title{
-     width: 40%;
-     margin: 12px;
-     float: left;
-     display: block;
-     float: left;
-     font-family: brandonBold;
-     font-weight: bold;
-}
-
- .footer_nav .footer_nav-title .footer_nav-title-cirlce{
-     text-align: left;
-     margin: 0px;
-     padding: 16px;
-     font-size: 2.4rem;
-     text-decoration: none;
-     color: #bdbdbd;
-    display: block;
- }
-
- .footer_nav .footer_nav-title .footer_nav-title-email{
-     text-align: left;
-     margin: 0px;
-     padding: 12px;
-     display: block;
- }
-
-.footer_nav .footer_nav-main{
-
+.footer__nav .footer__nav__main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.footer_nav .footer_nav-main li{
-    width: auto;
-    padding: 24px;
-    padding-bottom: 8px;
+
+.footer__nav .footer__nav__main li {
     text-align: center;
-    margin-bottom: 16px;
 }
 
-.footer_nav .footer_nav-main a {
+
+.footer__nav .footer__nav__main a {
+    display: inline-block;
+    height: 44px;
     color: #bdbdbd;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-decoration: none;
+    margin-right: 15px;
 }
 
-.footer_nav-policy{
-    display: flex;
-    justify-content : flex-end;
-    margin-bottom: 1px;
-    margin-right: 32px;
-}
-
-.footer_nav .footer_nav-policy li{
-    padding: 2px 0px;
-    text-align: right;
-    margin-bottom: 16px;
+.fa{
+    font-size: 1.8rem;
+    margin-right: 4px;
 }
 
 
 
 .footer__nav__policy {
     display: flex;
-    justify-content: flex-end;
-  margin-bottom: 1px;
-  margin-right: 32px;
+    justify-content: center;
 }
 
 .footer__nav .footer__nav__policy li {
-  padding: 2px 0px;
-  text-align: right;
-  margin-bottom: 16px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
 }
 
 .footer__nav .footer__nav__policy li a {
-  color: #bdbdbd;
-  font-size: 1rem;
-  text-decoration: none;
+    display: inline-block;
+    height: 32px;
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 
 .copyright {
-    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+    text-align: center;
+    font-size: 2.0rem;
+    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
     font-weight: 400;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     font-size: 1rem;
-    background: #fff;
 }
 
 .footer__nav .footer__nav__main li:first-child {
@@ -488,4 +345,45 @@ border-bottom: 0px;
 }
 .footer__nav .footer__nav__policy li:first-child {
     display: none;
+}
+
+@media screen and (min-width:480px) {
+    /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*iPadのCSSを記述する*/
+}
+
+@media screen and (min-width:1024px) {
+    /*PC用のCSSを記述する*/
+    footer{
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+    .footer__nav .footer__nav__main {
+        justify-content: flex-end;
+    }
+
+    .footer__nav .footer__nav__main li {
+        margin-right: 20px;
+    }
+    .footer__nav .footer__nav__main li:first-child {
+        display: block;
+        margin-right: auto;
+    }
+    .footer__nav__policy div{
+        display: none;
+    }
+    .footer__nav__policy {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__nav .footer__nav__policy li:first-child {
+        display: block;
+        margin-right: auto;
+        padding: 0;
+    }
+
+
 }
