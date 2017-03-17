@@ -206,7 +206,7 @@
         right: 20px;
     }
 
-    input{
+    .menu_search-keywords{
         font-weight: bold;
     }
 
@@ -425,11 +425,11 @@
     form, input {
         margin: 0; /* マージンをリセット */
     }
-    form {
+    .menu_search-form {
         position: relative; /* 基準位置とする */
         width: 100%;
     }
-    input[type="text"] {
+    .menu_search-keywords {
         background-color: #1E1E1E;
         border: 0;
         height: 35px; /* 高さ40px */
