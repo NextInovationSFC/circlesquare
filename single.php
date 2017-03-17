@@ -138,6 +138,7 @@
             <h2 class="contents__heading schedule__heading">年間スケジュール</h2>
             <hr class="line blue">
             <div class="shiki clearfix">
+                <div class="pre clearfix">
                 <div class="spring">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/Spring.jpg" width = "80" alt="" class="spring__img">
                     <p class="spring__description">
@@ -162,6 +163,8 @@
                         ?>
                     </p>
                 </div>
+                </div>
+                <div class="late clearfix">
                 <div class="autumn">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/Autumn.jpg" width = "80" alt="" class="autumn__img">
                     <p class="autumn__description">
@@ -185,6 +188,7 @@
                         }
                         ?>
                     </p>
+                </div>
                 </div>
             </div>
         </div>

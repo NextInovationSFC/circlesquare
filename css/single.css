@@ -78,10 +78,19 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .sns{
-    width: 360px;
+    width: 98%;
     margin: 16px auto;
 /*    margin-left: 16px;*/
-
+    display:-webkit-box;/*--- Androidブラウザ用 ---*/
+    display:-ms-flexbox;/*--- IE10 ---*/
+    display: -webkit-flex;/*--- safari（PC）用 ---*/
+    display:flex;
+    -webkit-box-pack:justify;/*--- Androidブラウザ用 ---*/
+    -ms-flex-pack:justify;/*--- IE10 ---*/
+    -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+    justify-content:space-between;
+    webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
 }
 .sns__item{
     -webkit-box-sizing: border-box;
@@ -91,11 +100,10 @@ h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
     display: inline-block;
     color: #ffffff;
-    width: 98px;
+    width: 88px;
     height: 44px;
     text-align: center;
     border-radius: 5px;
-    margin-right: 16px;
 }
 .sns a{
     font-size: 2.4rem;
@@ -219,29 +227,35 @@ h1,h2,h3,h4,h5,h6 {
     width: 300px;
     margin: 0 auto 32px;
 }
-.shiki img{
 
+.pre{
+    width: 288px;
+    float: left;
+}
+.late{
+    width: 288px;
+    float: left;
 }
 .spring{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
 }
 .summer{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
     margin-left: 80px;
 }
 .autumn{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
 }
 .winter{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
     margin-left: 80px;
 }
 
@@ -304,7 +318,14 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     .sns{
+        width: 340px;
+        display: block;
         float: right;
+    }
+
+    .sns__item{
+        width: 94px;
+        margin-right: 16px;
     }
 
 
@@ -383,6 +404,16 @@ h1,h2,h3,h4,h5,h6 {
     .shiki{
         width: 800px;
     }
+
+    .pre{
+        width: 400px;
+        float: left;
+    }
+    .late{
+        width: 400px;
+        float: left;
+    }
+
     .shiki p{
         padding-left: 0px;
     }
@@ -402,7 +433,7 @@ h1,h2,h3,h4,h5,h6 {
         margin-top: 32px;
         width: 100px;
         float: left;
-        margin-left: 80px;
+        margin-left: 44px;
     }
     .winter{
         margin-top: 32px;
