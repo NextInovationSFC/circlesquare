@@ -14,23 +14,68 @@
             <h1 class="title__name">
                 <?php echo post_custom('name'); ?>
             </h1>
-            <p class="title__tag"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ・テニス</p>
+            <div class="random_tags_parent">
+                <?php
+                $cats = get_the_category();
+                $cat1 = $cats[0];
+                $cat2 = $cats[1];
+                $cat3 = $cats[2];
+                $cat4 = $cats[3];
+                ?>
+
+                <span class="<?php if($cat1->parent){
+                    $parent = get_category($cat1->parent);
+                    echo $parent->slug;
+                }else{
+                    echo $cat1->slug;
+                } ?>">
+                    <?php if($cat1->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
+                    <?php if($cat1->parent){echo $cat1->cat_name;} ?>
+                </span>
+                <span class="<?php if($cat2->parent){
+                    $parent = get_category($cat2->parent);
+                    echo $parent->slug;
+                }else{
+                    echo $cat2->slug;
+                } ?>">
+                    <?php if($cat2->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
+                    <?php if($cat2->parent){echo $cat2->cat_name;} ?>
+                </span>
+                <span class="<?php if($cat3->parent){
+                    $parent = get_category($cat3->parent);
+                    echo $parent->slug;
+                }else{
+                    echo $cat3->slug;
+                } ?>">
+                    <?php if($cat3->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
+                    <?php if($cat3->parent){echo $cat3->cat_name;} ?>
+                </span>
+                <span class="<?php if($cat4->parent){
+                    $parent = get_category($cat4->parent);
+                    echo $parent->slug;
+                }else{
+                    echo $cat4->slug;
+                } ?>">
+                    <?php if($cat4->parent){echo '<i class="fa fa-tags" aria-hidden="true"></i>';} ?>
+                    <?php if($cat4->parent){echo $cat4->cat_name;} ?>
+                </span>
+            </div>
         </div>
 
 
         <div class="sns">
             <?php if(have_posts()): while(have_posts()):the_post(); ?>
-                <a href="<?php echo post_custom('homepage'); ?>" class="sns__item sns__webpage" target="_blank">
-                    <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-                </a>
+            <a href="<?php echo post_custom('homepage'); ?>" class="sns__item sns__webpage" target="_blank">
+                <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+            </a>
 
             <a href="<?php echo post_custom('twitter'); ?>" class="sns__item sns__twitter" target="_blank">
-                    <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
-                </a>
+                <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+            </a>
 
             <a href="<?php echo post_custom('facebook'); ?>" class="sns__item sns__facebook" target="_blank">
-                    <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
-                </a>
+                <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+            </a>
             <?php endwhile; endif; ?>
         </div>
         <div class="about">
@@ -39,10 +84,10 @@
             </p>
         </div>
 
-<!--
-        <div class="chart">
-            <canvas id="myBarChart" width="800" height="400"></canvas>
-        </div>
+        <!--
+<div class="chart">
+<canvas id="myBarChart" width="800" height="400"></canvas>
+</div>
 -->
     </div>
 

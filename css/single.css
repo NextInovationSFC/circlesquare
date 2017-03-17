@@ -50,15 +50,30 @@ h1,h2,h3,h4,h5,h6 {
 .title__name{
     font-size: 2.8rem;
 }
-.title__tag{
+
+.random_tags_parent{
     margin-top: 12px;
     font-size: 1.2rem;
     color: #a9a9a9;
 }
 
-.fa-tags{
-    color: #e63c6e;
+.sports i{
+    color: #E63C6E;
 }
+.event i{
+    color: #5AC8DC;
+}
+.social-activity i{
+    color: #FAC81E;
+}
+.hobby i{
+    color: #78C850;
+}
+.no-genre i{
+    color: #272727;
+}
+
+
 
 .sns{
     width: 360px;
