@@ -1,23 +1,16 @@
 /*　モバイル（iPhone,Android）に関するCSSを記述する*/
 html {
-font-size: 62.5%;
+    font-size: 62.5%;
 }
 body{
     box-sizing: border-box;
     font-family: "ヒラギノ角ゴ ProN W6","ヒラギノ角ゴ Pro W6";
     background: #F9F9F9;
 }
-header{
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-}
-
-
 /*home*/
 .main_parent{
     text-align: center;
 }
-
 /*main*/
 .main:after{
     content: ".";
@@ -32,7 +25,6 @@ header{
     margin: 0 auto;
     margin-bottom: 32px;
 }
-
 .pageTop-btn a {
     display: block;
     z-index: 999;
@@ -47,7 +39,6 @@ header{
     text-align: center;
     box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
 }
-
 .pageTop-btn a:hover {
     text-decoration: none;
     opacity: 0.7;
@@ -56,12 +47,8 @@ header{
     font-size: 2.4rem;
     top: 50%;
 }
-
-
-
 @media screen and (min-width:480px) {
     /*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
-
 }
 @media screen and (min-width:768px) and ( max-width:1024px) {
     /*　iPadのCSSを記述する*/
@@ -74,7 +61,6 @@ header{
         margin: 0 auto;
         margin-bottom: 32px;
     }
-
     .pageTop-btn a {
         display: block;
         z-index: 999;
@@ -90,7 +76,6 @@ header{
         box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
         display: none;
     }
-
     .pageTop-btn a:hover {
         text-decoration: none;
         opacity: 0.7;
@@ -99,5 +84,4 @@ header{
         font-size: 2.4rem;
         top: 50%;
     }
-
 }

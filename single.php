@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
 
-
-
 <div class="imageBox">
     <img src="<?php echo wp_get_attachment_image_src ( post_custom('image'), 'full' )[0]; ?>" alt="<?php the_title(); ?>">
 </div>
 
 <div class="container">
+
 
     <div class="overview">
         <div class="title">
@@ -15,6 +14,7 @@
                 <?php echo post_custom('name'); ?>
             </h1>
             <p class="title__tag"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ・テニス</p>
+
         </div>
 
 
@@ -32,6 +32,7 @@
                     <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
                 </a>
             <?php endwhile; endif; ?>
+
         </div>
         <div class="about">
             <p class="about__description">
