@@ -5,10 +5,6 @@ body{
     box-sizing: border-box;
     font-family: "Helvetica Neue","小塚ゴシック";
     background: #EBEFF1;
-    background-image: url(../img/home_top.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
 }
 header{
     background-color: #ffffff;
