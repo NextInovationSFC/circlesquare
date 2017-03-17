@@ -6,7 +6,6 @@
           <a class="footer_nav-title-email">Email : circlesquare.sfc@gmail.com</a>
          </div>
 
-
          <ul class="footer_nav-main">
              <li><i class="fa fa-home fa-2x" aria-hidden="true"></i>
                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
