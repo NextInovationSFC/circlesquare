@@ -11,6 +11,11 @@ header{
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
+.main_parent {
+    text-align: center;
+}
+
+
 .search-result{
     font-size: 14px;
     background-color: #ffffff;
@@ -25,23 +30,13 @@ header{
     text-align: left;
 }
 
-.kekka{
-    margin-top: 20px;
-    font-size: 3em;
-
-}
-
-
-
-.main_parent {
-    text-align: center;
-}
 
 @media screen and (max-width: 979px) {
 
     header{
         box-shadow: none;
     }
+
 
     .search-result-text{
         padding-left: 20px;
@@ -86,4 +81,3 @@ header{
     }
 
 }
-

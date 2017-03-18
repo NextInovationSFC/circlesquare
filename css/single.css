@@ -65,6 +65,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 16px auto;
 /*    margin-left: 16px;*/
 
+
 }
 .sns__item{
     -webkit-box-sizing: border-box;
@@ -167,6 +168,11 @@ h1,h2,h3,h4,h5,h6 {
 .shiki img{
 
 }
+
+.contents{
+    padding: 16px;
+}
+
 .spring{
     margin-top: 32px;
     width: 100px;
