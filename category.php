@@ -6,7 +6,7 @@
 
         <div class="search-result">
             <div class="search-result-text">
-                <?php if($s){ ?>「<?php echo $s; } ?>」の検索結果（全<?php echo $wp_query->found_posts; ?>件）
+                「<i class="fa fa-tags " aria-hidden="true"></i><?php single_cat_title(); ?>」の検索結果（全<?php echo $wp_query->found_posts; ?>件）
             </div>
         </div>
 
@@ -21,6 +21,5 @@
         </div>
     </div>
 </div>
-
 
 <?php get_footer(); ?>

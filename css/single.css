@@ -81,6 +81,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 98%;
     margin: 16px auto;
 /*    margin-left: 16px;*/
+
     display:-webkit-box;/*--- Androidブラウザ用 ---*/
     display:-ms-flexbox;/*--- IE10 ---*/
     display: -webkit-flex;/*--- safari（PC）用 ---*/
@@ -91,6 +92,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content:space-between;
     webkit-box-lines:multiple;
     -moz-box-lines:multiple;
+
 }
 .sns__item{
     -webkit-box-sizing: border-box;
@@ -236,6 +238,11 @@ h1,h2,h3,h4,h5,h6 {
     width: 288px;
     float: left;
 }
+
+.contents{
+    padding: 16px;
+}
+
 .spring{
     float: left;
     margin-top: 32px;

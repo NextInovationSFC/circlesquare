@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
 
-
-
 <div class="imageBox">
     <img src="<?php echo wp_get_attachment_image_src ( post_custom('image'), 'full' )[0]; ?>" alt="<?php the_title(); ?>">
 </div>
 
 <div class="container">
+
 
     <div class="overview">
        <div class="clearfix">
@@ -15,6 +14,7 @@
             <h1 class="title__name">
                 <?php echo post_custom('name'); ?>
             </h1>
+
             <div class="random_tags_parent">
                 <?php
                 $cats = get_the_category();
@@ -61,6 +61,7 @@
                     <?php if($cat4->parent){echo $cat4->cat_name;} ?>
                 </span>
             </div>
+
         </div>
 
 
@@ -79,6 +80,7 @@
                 <i class="fa fa-home fa-fw" aria-hidden="true"></i>
             </a>
             <?php endwhile; endif; ?>
+
         </div>
 
         </div>
