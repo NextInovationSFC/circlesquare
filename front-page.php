@@ -13,8 +13,13 @@
     </div>
 </div>
 
+<!--
 <div id="pageTop-btn" class="pageTop-btn">
     <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
+-->
+<a class="button" href="#">
+    <i class="fa fa-chevron-up"></i><span class="ring"></span>
+</a>
 
 <?php get_footer(); ?>
