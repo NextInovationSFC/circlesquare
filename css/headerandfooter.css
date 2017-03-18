@@ -722,6 +722,7 @@ footer a {
     footer{
         padding-left: 52px;
         padding-right: 52px;
+        margin-top: 64px;
     }
     .footer__nav .footer__nav__main {
         justify-content: flex-end;
