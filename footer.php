@@ -7,15 +7,15 @@
             </li>
             <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <i class="fa fa-home fa-fw" aria-hidden="true"></i>  Home</a>
+                    <i class="fa fa-home fa-fw footer_icon" aria-hidden="true"></i>  Home</a>
             </li>
             <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">
-                    <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>  Contact</a>
+                    <i class="fa fa-envelope fa-fw footer_icon" aria-hidden="true"></i>  Contact</a>
             </li>
             <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>about">
-                    <i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i>  About</a>
+                    <i class="fa fa-exclamation-circle fa-fw footer_icon" aria-hidden="true"></i>  About</a>
             </li>
         </ul>
 
