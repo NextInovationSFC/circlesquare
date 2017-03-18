@@ -43,9 +43,11 @@
     }
 
     .header_nav .header_nav-logo{
-        height: 70px;
+        height: 50px;
         display: block;
         padding: 10px;
+        padding-top: 30px;
+        padding-left: 20px;
         margin-left: 50px;
     }
 
@@ -70,16 +72,25 @@
 
     .menu_side-list li a{
         height: 41px;
-        width: 130px;
+        width: 80px;
         display: flex;
         text-decoration: none;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         padding-top: 8px;
+        color: #272727;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
     }
 
-    .menu_side-list li a:link,.menu_side-list li a:visited{
-        color: #303030;
+    .menu_side-list li a:hover{
+        color: #BDBDBD;
     }
+/*
+    .menu_side-list li a:link,.menu_side-list li a:visited{
+
+    }
+*/
+/*
 
     .menu_side-list-homeImg{
         margin-top: -5px;
@@ -110,6 +121,7 @@
         -webkit-background-size: 100%;
         background-size: 100%;
     }
+*/
 
     .menu_side-list .menu_side-list-twitter{
         display: none;
@@ -129,15 +141,18 @@
         display: block;
         font-family:'Noto Sans', sans-serif;
         font-weight: 700;
-
         text-decoration: none;
-        font-size: 18px;
+        font-size: 1.6rem;
         padding: 7px;
+        color: #272727;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+    }
+    .menu_search-list li a:hover{
+        color: #bdbdbd;
     }
 
-    .menu_search-list li a:link,.menu_search-list li a:visited{
-        color: #303030;
-    }
+
 
     .menu_search-tag-sport i{
         color: #D73E6A;
@@ -201,6 +216,7 @@
         top: 12px;
         left: 18px;
         border: 1px solid #FFF;
+        font-weight: 700;
     }
 
 
