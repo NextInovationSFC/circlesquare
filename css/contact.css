@@ -8,7 +8,8 @@ body{
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     background: #f9f9f9;
-    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro';
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
 }
 /*---contact---*/
 /**--コンタクト--**/
@@ -23,8 +24,7 @@ body{
 
 
 .heading{
-/*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
     background: #272727;
@@ -32,6 +32,7 @@ body{
     height: 44px;
     line-height: 44px;
     width: 100%;
+    font-weight: 700;
 }
 
 .contact{
@@ -157,7 +158,6 @@ input[type="submit"]
 }
 @media screen and (min-width:1024px) {
     .heading{
-        /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
         font-weight: bold;
         font-size: 2.5rem;
         text-align: left;
