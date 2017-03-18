@@ -27,6 +27,7 @@
 @media screen and (min-width: 980px) {
 
 
+
     header{
         text-align: center;
         background-color: #ffffff;
@@ -212,6 +213,8 @@
 
     .menu_search-keywords{
     }
+
+
 
 }
 
@@ -531,7 +534,7 @@
     }
 
     .menu_side-list-homeImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -541,7 +544,7 @@
     }
 
     .menu_side-list-aboutImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -551,7 +554,7 @@
     }
 
     .menu_side-list-contactImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -561,7 +564,7 @@
     }
 
     .menu_side-list-twitterImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -583,7 +586,7 @@ footer {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Nunito','Noto Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1px;
     background-color: #fff;
     color: #bdbdbd;
@@ -618,7 +621,7 @@ footer a {
     display: inline-block;
     height: 44px;
     color: #bdbdbd;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-decoration: none;
     margin-right: 15px;
 }
@@ -629,10 +632,10 @@ footer a {
 }
 
 
-
 .footer__nav__policy {
     display: flex;
     justify-content: center;
+    margin-left: 15px;
 }
 
 .footer__nav .footer__nav__policy li {
@@ -648,12 +651,21 @@ footer a {
     text-decoration: none;
 }
 
-
+.footer__nav .footer__nav__policy li a {
+    display: inline-block;
+    height: 32px;
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.footer_size{
+    font-size: 1.6rem;
+}
 .copyright {
     text-align: center;
     font-size: 2.0rem;
     font-family: 'Nunito','Noto Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.3rem;
     font-size: 1rem;
 }
@@ -664,6 +676,19 @@ footer a {
 .footer__nav .footer__nav__policy li:first-child {
     display: none;
 }
+
+.verticalLine{
+    background-color:#bdbdbd;
+    width:2px;
+    height:28px;
+    border-radius: 1px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.privacy{
+    padding-right: 0px;
+}
+
 
 @media screen and (min-width:480px) {
     /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
@@ -684,7 +709,7 @@ footer a {
     }
 
     .footer__nav .footer__nav__main li {
-        margin-right: 20px;
+        margin-right: 0px;
     }
     .footer__nav .footer__nav__main li:first-child {
         display: block;
@@ -696,12 +721,14 @@ footer a {
     .footer__nav__policy {
         display: flex;
         justify-content: flex-end;
+        margin-left: 0;
     }
     .footer__nav .footer__nav__policy li:first-child {
         display: block;
         margin-right: auto;
         padding: 0;
     }
+
 
 
 }
