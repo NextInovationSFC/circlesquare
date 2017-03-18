@@ -13,7 +13,7 @@
 
         <div class="about_sentence">
             <div class="screen-reader-response"></div>
-            <h3 class="about_heading">About</h3>
+            <h3 class="about_heading">ABOUT</h3>
             <div class="lineBox">
                 <hr class="heading_line blue">
                 <hr class="heading_line yellow">
@@ -25,7 +25,7 @@
 
 
         <div class="about_member">
-            <h3 class="member_heading">Member</h3>
+            <h3 class="member_heading">MEMBER</h3>
             <div class="lineBox">
                 <hr class="heading_line blue">
                 <hr class="heading_line yellow">
