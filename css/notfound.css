@@ -3,6 +3,8 @@ html{
 }
 body{
     background: #f9f9f9;
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
 }
 
 .container{
@@ -30,11 +32,11 @@ body{
 }
 
 .card__description{
+    font-family: 'Noto Sans', sans-serif;
     margin-top: 24px;
     margin-left: 32px;
     font-size: 18px;
     line-height: 36px;
-    font-weight: bold;
 }
 
 
@@ -80,7 +82,7 @@ body{
         font-size: 3.0rem;
     }
     .card__description{
-        margin-top: 32px;
+        margin-top: 24px;
         margin-left: 70px;
         font-size: 2.4rem;
         line-height: 48px;
