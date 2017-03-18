@@ -378,11 +378,14 @@
     }
 
     .menu_search-logo{
-        margin: 20px auto 10px auto;
-        height: 40px;
-        width: 115px;
+        margin: 40px auto 10px auto;
         display: block;
-        background: url(../img/search_logo.png) no-repeat left top;
+        font-family: 'Nunito',sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 3.2rem;
+        letter-spacing: 4px;
         -webkit-background-size: 100%;
         background-size: 100%;
     }

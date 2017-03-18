@@ -87,7 +87,7 @@
 
                 <nav class="cd-primary-nav menu_search">
                     <ul class="menu_search-list">
-                        <li class="menu_search-logo"></li>
+                        <li class="menu_search-logo">Search</li>
                         <li>
                             <form class="menu_search-form" method="get"  action="<?php bloginfo('home'); ?>">
                                 <input type="text" value="" name="s" id="s" class="menu_search-keywords" placeholder="検索キーワードを入力 (ex.テニス)">
