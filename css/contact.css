@@ -7,7 +7,7 @@ body{
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    background: #f9f9f9;
+    background: #fcfcfc;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
 }
@@ -36,7 +36,7 @@ body{
 }
 
 .contact{
-    background: #f9f9f9;
+    background: #fcfcfc;
     color: #272727;
     padding: 16px;
 }
@@ -173,6 +173,7 @@ input[type="submit"]
         border-bottom: 3px solid #272727;
     }
     .contact{
+        background: #fcfcfc;
         padding-left: 188px;
         padding-right: 188px;
         padding-top: 32px;
