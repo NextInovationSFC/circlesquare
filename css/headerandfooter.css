@@ -36,7 +36,8 @@
     }
 
     .header_nav{
-        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
         font-size: 1.5rem;
     }
 
@@ -58,7 +59,8 @@
 
     .menu_side-list {
         overflow:hidden;
-        font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
     }
 
     .menu_side-list li{
@@ -124,10 +126,11 @@
         height: 36px;
         width: 115px;
         display: block;
-        font-family:"游ゴシック", YuGothic;
+        font-family:'Noto Sans', sans-serif;
+        font-weight: 700;
+
         text-decoration: none;
         font-size: 18px;
-        font-weight: bold;
         padding: 7px;
     }
 
@@ -208,7 +211,6 @@
     }
 
     .menu_search-keywords{
-        font-weight: bold;
     }
 
 }
@@ -277,7 +279,8 @@
         position: fixed;
         top: 0;
         height: 50px;
-        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
         font-size: 1.5rem;
         width: 100%;
         z-index: 100;
@@ -339,7 +342,8 @@
         height: 36px;
         width: 115px;
         display: block;
-        font-family:"游ゴシック", YuGothic;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
         text-decoration: none;
         font-size: 18px;
         padding-top: 7px;
@@ -439,7 +443,6 @@
         margin-right: 5%;
         padding: 0 2%;
         color: #ffffff;
-        font-weight: bold;
     }
 
 
@@ -484,7 +487,8 @@
     .menu_side-list{
         list-style: none;
         padding-left: 0;
-        font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
     }
 
     .menu_side-list li{
@@ -573,7 +577,8 @@ footer {
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
     letter-spacing: 1px;
     background-color: #fff;
     color: #bdbdbd;
@@ -626,7 +631,6 @@ footer a {
 }
 
 .footer__nav .footer__nav__policy li {
-    font-weight: bold;
     padding: 8px;
     text-align: center;
 }
@@ -643,8 +647,8 @@ footer a {
 .copyright {
     text-align: center;
     font-size: 2.0rem;
-    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
-    font-weight: 400;
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
     letter-spacing: 0.3rem;
     font-size: 1rem;
 }
