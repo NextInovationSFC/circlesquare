@@ -8,13 +8,13 @@ body{
 }
 header{
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .search-result{
     font-size: 14px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     position: relative;
     height: 40px;
 }
@@ -91,7 +91,7 @@ header{
     .search-result{
         font-size: 14px;
         background-color: #ffffff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         position: fixed;
         height: 40px;
         width: 100%;
