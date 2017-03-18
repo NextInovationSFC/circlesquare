@@ -90,7 +90,7 @@
                         <li class="menu_search-logo">Search</li>
                         <li>
                             <form class="menu_search-form" method="get"  action="<?php bloginfo('home'); ?>">
-                                <input type="text" value="" name="s" id="s" class="menu_search-keywords" placeholder="検索キーワードを入力 (ex.テニス)">
+                                <input type="text" value="" name="s" id="s" class="menu_search-keywords">
                                 <input type="image" src="<?php echo get_template_directory_uri(); ?>/img/search.png" width="30" value="検索" class="menu_searchBtn">
                             </form>
                         </li>
