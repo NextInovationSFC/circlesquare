@@ -29,8 +29,8 @@ body{
     text-align: center;
     background: #272727;
     color: #ffffff;
-    height: 36px;
-    line-height: 36px;
+    height: 44px;
+    line-height: 44px;
     width: 100%;
 }
 
@@ -50,7 +50,7 @@ body{
     background: #ffffff;
     border-radius: 15px;
     padding: 16px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     margin-top: 24px;
     margin-bottom: 36px;
 }
@@ -169,6 +169,7 @@ input[type="submit"]
         width: auto;
         margin-left: 88px;
         margin-right: 88px;
+        margin-top: 48px;
         border-bottom: 3px solid #272727;
     }
     .contact{
@@ -187,7 +188,7 @@ input[type="submit"]
         padding: 32px;
         padding-left: 88px;
         padding-right: 88px;
-        box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         margin-top: 24px;
         margin-bottom: 36px;
     }
