@@ -122,6 +122,9 @@
         background-size: 100%;
     }
 */
+    input::-webkit-input-placeholder { color:transparent; }
+    input::-moz-placeholder { color:transparent; }
+    input::-moz-placeholder { color:transparent; }
 
     .menu_side-list .menu_side-list-twitter{
         display: none;
