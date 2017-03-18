@@ -112,6 +112,12 @@ body{
 
 input[type="submit"]
 {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input[type="submit"]
+{
     border: none;
     font-size: 1.8rem;
     background: #272727;
