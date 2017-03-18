@@ -7,6 +7,7 @@ body{
 
 .container{
     padding: 16px;
+    height: 500px;
 }
 
 .card{
@@ -19,7 +20,7 @@ body{
     margin: 0 auto;
     margin-bottom: 32px;
     padding-top: 32px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 
@@ -65,7 +66,9 @@ body{
     /*PC用のCSSを記述する*/
 
     .container{
-        padding: 188px;
+        padding-left: 188px;
+        padding-right: 188px;
+        padding-top: 64px;
     }
     .card{
         height: 248px;
