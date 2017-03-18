@@ -4,7 +4,6 @@
     position:relative;
     width: 100%;
 }
-
 .random {
     padding: 0 0 32px 0;
     display: block;
@@ -19,19 +18,20 @@
     width: 87%;
     height: auto;
     background-color: #ffffff;
-    box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
     border-radius: 8px;
     margin: 32px 16px 0 16px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    transition-duration: 0.2s;
+}
+
+.random_grid li:hover{
+    box-shadow: 0 2px 20px 2px rgba(0,0,0,0.12);
 }
 
 .random_grid a{
     text-decoration: none;
 }
 
-.random_grid li:hover{
-    box-shadow: 0 2px 10px 2px rgba(0,0,0,0.26);
-    transition: 0.1s;
-}
 .random_icon {
     position: relative;
     width:100%;
@@ -108,14 +108,14 @@
     color: #272727;
 }
 @media screen and (min-width:480px) {
-    /*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
+    /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
 
 }
-@media screen and (min-width:768px) and ( max-width:1024px) {
-    /*　iPadのCSSを記述する*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*iPadのCSSを記述する*/
 }
 @media screen and (min-width:1024px) {
-    /*　PC用のCSSを記述する　*/
+    /*PC用のCSSを記述する*/
     .wrap-col{
         height: auto;
         position:relative;
@@ -136,7 +136,7 @@
         width: 343px;
         height: auto;
         background-color: #ffffff;
-        box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         border-radius: 8px;
         margin: 32px 16px 0 16px;
     }
@@ -146,8 +146,6 @@
     }
 
     .random_grid li:hover{
-        box-shadow: 0 2px 10px 2px rgba(0,0,0,0.26);
-        transition: 0.1s;
     }
     .random_icon {
         position: relative;
