@@ -162,10 +162,11 @@
     .menu_search{
         text-align: center;
         background-color: #ffffff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         position: relative;
         height: 60px;
     }
+
 
     .menu_search-list {
         margin-left: 50px;
@@ -272,7 +273,7 @@
     header{
         text-align: center;
         background-color: #ffffff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         position: fixed;
         top: 0;
         height: 50px;
@@ -384,7 +385,7 @@
 
     .menu_search{
         background-color: #ffffff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         position: relative;
         height: 60px;
     }
@@ -576,7 +577,7 @@ footer {
     letter-spacing: 1px;
     background-color: #fff;
     color: #bdbdbd;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.12);
     height: 160px;
     padding-top: 32px;
     padding-left: 32px;
