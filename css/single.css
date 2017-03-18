@@ -9,6 +9,7 @@ html {
 body{
     box-sizing: border-box;
     background: #FFFFFF;
+    font-family: 'ヒラギノ角ゴ Pro W6';
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
@@ -49,22 +50,47 @@ h1,h2,h3,h4,h5,h6 {
 
 .title__name{
     font-size: 2.8rem;
+    font-weight: 600;
 }
-.title__tag{
+
+.random_tags_parent{
     margin-top: 12px;
     font-size: 1.2rem;
     color: #a9a9a9;
 }
 
-.fa-tags{
-    color: #e63c6e;
+.sports i{
+    color: #E63C6E;
+}
+.event i{
+    color: #5AC8DC;
+}
+.social-activity i{
+    color: #FAC81E;
+}
+.hobby i{
+    color: #78C850;
+}
+.no-genre i{
+    color: #272727;
 }
 
+
+
 .sns{
-    width: 360px;
+    width: 98%;
     margin: 16px auto;
 /*    margin-left: 16px;*/
-
+    display:-webkit-box;/*--- Androidブラウザ用 ---*/
+    display:-ms-flexbox;/*--- IE10 ---*/
+    display: -webkit-flex;/*--- safari（PC）用 ---*/
+    display:flex;
+    -webkit-box-pack:justify;/*--- Androidブラウザ用 ---*/
+    -ms-flex-pack:justify;/*--- IE10 ---*/
+    -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+    justify-content:space-between;
+    webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
 }
 .sns__item{
     -webkit-box-sizing: border-box;
@@ -74,11 +100,10 @@ h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
     display: inline-block;
     color: #ffffff;
-    width: 98px;
+    width: 88px;
     height: 44px;
     text-align: center;
     border-radius: 5px;
-    margin-right: 16px;
 }
 .sns a{
     font-size: 2.4rem;
@@ -104,8 +129,8 @@ h1,h2,h3,h4,h5,h6 {
 .sns__webpage{
 /*    background: gray;*/
 
-    background: #00c300;
-    border-bottom: #40ab40 solid 3px
+    background: #4c7393;
+    border-bottom: #34526f solid 3px
 
 }
 /*facebook 3b5998  border-bottom #404c66 solid 3px*/
@@ -123,33 +148,71 @@ h1,h2,h3,h4,h5,h6 {
 */
 
 /*コンテンツ*/
+/*
 
+.line{
+    display: block;
+    width: 60%;
+    height: 80px;
+    border: 0;
+}
+.red {
+    background-color: #e63c6e;
+}
+.yellow {
+    background-color: #fac81e;
+}
+.green {
+    background-color: #78c850;
+}
+.blue {
+    background-color: #5ac8dc;
+}
+*/
+
+.line{
+    display: none;
+}
 .contents h2{
     font-size: 1.8rem;
-    width: 300px;
-    padding: 20px 3px 10px;
-    border-bottom: #5ac8dc solid 2px;
-/*    border-bottom-color: #ff656a;*/
-/*    border-bottom-color: gray;*/
+    font-weight: bold;
+    width: 150px;
+/*    padding: 20px 3px 10px;*/
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    line-height: 36px;
+    border-left: #5ac8dc solid 4px;
+    margin-top: 32px;
 }
 
 
 
 .locationAndDate h2{
-    border-bottom: #e63c6e solid 2px;
+    border-left: #e63c6e solid 4px;
 }
 
 .number h2{
-    border-bottom: #78c850 solid 2px;
+    border-left: #78c850 solid 4px;
 }
 
 .cost h2{
-    border-bottom: #fac81e solid 2px;
+    border-left: #fac81e solid 4px;
 }
 
 .contents p{
     font-size: 1.4rem;
     padding-top: 16px;
+    padding-left: 32px;
+}
+
+.schedule p{
+    padding-left: 0px;
+}
+
+.schedule img{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
 }
 
 
@@ -164,29 +227,35 @@ h1,h2,h3,h4,h5,h6 {
     width: 300px;
     margin: 0 auto 32px;
 }
-.shiki img{
 
+.pre{
+    width: 288px;
+    float: left;
+}
+.late{
+    width: 288px;
+    float: left;
 }
 .spring{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
 }
 .summer{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
     margin-left: 80px;
 }
 .autumn{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
 }
 .winter{
+    float: left;
     margin-top: 32px;
     width: 100px;
-    float: left;
     margin-left: 80px;
 }
 
@@ -226,5 +295,154 @@ h1,h2,h3,h4,h5,h6 {
         transform: translate(-50%, -50%);
         width: 100%;
         height: auto;
+    }
+
+    .container{
+        padding-left: 132px;
+        padding-right: 132px;
+        padding-top: 32px;
+    }
+
+
+    .title__name{
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .random_tags_parent{
+        margin-top: 24px;
+    }
+
+    .title{
+        float: left;
+    }
+
+    .sns{
+        width: 340px;
+        display: block;
+        float: right;
+    }
+
+    .sns__item{
+        width: 94px;
+        margin-right: 16px;
+    }
+
+
+    .about p{
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: 1px;
+        margin-top: 32px;
+    }
+
+
+    .contents h2{
+        font-size: 1.8rem;
+        display: inline-block;
+        border-left: none;
+        border-right: #5ac8dc solid 2px;
+    }
+    .locationAndDate h2{
+        text-align: right;
+        padding-right: 32px;
+        border-left: none;
+        border-right: #e63c6e solid 2px;
+    }
+
+    .number h2{
+        text-align: right;
+        padding-right: 32px;
+        border-left: none;
+        border-right: #78c850 solid 2px;
+    }
+
+    .cost h2{
+        text-align: right;
+        padding-right: 32px;
+        border-left: none;
+        border-right: #fac81e solid 2px;
+    }
+
+    .schedule h2{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 48px;
+        text-align: center;
+        border-right: none;
+    }
+
+
+    .line{
+        display: block;
+        width: 64px;
+        height: 2px;
+        border: 0;
+        margin: 0 auto;
+    }
+    .blue {
+        background-color: #5ac8dc;
+    }
+
+
+    .contents p{
+        display: inline;
+        font-size: 1.4rem;
+        padding-top: 16px;
+        padding-left: 32px;
+    }
+    .contentsBox{
+        padding-left: 64px;
+        border-top: 1px solid #a9a9a9;
+        border-bottom: 1px solid #a9a9a9;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    .shiki{
+        width: 800px;
+    }
+
+    .pre{
+        width: 400px;
+        float: left;
+    }
+    .late{
+        width: 400px;
+        float: left;
+    }
+
+    .shiki p{
+        padding-left: 0px;
+    }
+    .spring{
+        margin-top: 32px;
+        width: 100px;
+        float: left;
+        margin-left: 80px;
+    }
+    .summer{
+        margin-top: 32px;
+        width: 100px;
+        float: left;
+        margin-left: 80px;
+    }
+    .autumn{
+        margin-top: 32px;
+        width: 100px;
+        float: left;
+        margin-left: 44px;
+    }
+    .winter{
+        margin-top: 32px;
+        width: 100px;
+        float: left;
+        margin-left: 80px;
+    }
+    .shiki p{
+        display: block;
+        padding-left: 0px;
     }
 }
