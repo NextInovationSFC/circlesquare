@@ -119,15 +119,15 @@ li.nav__mega form.nav-search .nav___right li {
 
 /*
 li.nav__mega form.nav-search > li:nth-child(6n+5) {
-    margin: 0 1%;
+margin: 0 1%;
 }
 
 li.nav__mega form.nav-search > li:nth-child(6n-3) {
-    margin-left: 20px;
+margin-left: 20px;
 }
 
 li.nav__mega form.nav-search > li:nth-child(-n+3) {
-    clear: both;
+clear: both;
 }
 */
 
@@ -215,9 +215,9 @@ li.nav__mega .nav___typeSearch {
 
 /*
 .nav-searchBtn {
-    position: absolute;
-    top: 3px;
-    left: 174px;
+position: absolute;
+top: 3px;
+left: 174px;
 }
 */
 
@@ -304,7 +304,7 @@ footer a {
     margin-right: 15px;
 }
 
-.fa-home,fa-envelope,fa-exclamation-circle{
+.footer_icon{
     font-size: 1.8rem;
     margin-right: 4px;
 }
