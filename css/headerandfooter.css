@@ -105,6 +105,7 @@
         display: none;
     }
 
+
     .search-tag-sport{
         height: 40px;
         width: 115px;
@@ -543,7 +544,7 @@ footer a {
     margin-right: 15px;
 }
 
-.fa-home,fa-envelope,fa-exclamation-circle{
+.footer_icon{
     font-size: 1.8rem;
     margin-right: 4px;
 }

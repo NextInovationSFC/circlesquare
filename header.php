@@ -27,7 +27,7 @@
     <?php elseif ( is_page('sitepolicy') ): ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
     <?php elseif ( is_page('about') ): ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
     <?php elseif ( is_404() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/notfound.css">
 
