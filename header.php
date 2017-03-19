@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <title>CircleSquare</title>
+    <meta name="description" content="SFC新入生のためのサークル情報サイト。スポーツ、イベント、社会活動、趣味の４つのカテゴリ分けされた唯一のSFCサークル情報を公開中。">
+    <title>Circle Square ［サークルスクエア］|  SFC生のためのサークル情報サイト</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
