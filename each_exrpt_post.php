@@ -1,12 +1,12 @@
 <!--POST BOX-->
+<?php
+$cats = get_the_category();
+$cat1 = $cats[0];
+$cat2 = $cats[1];
+$cat3 = $cats[2];
+$cat4 = $cats[3];
+?>
 <li class="col-1-4 ripple" id="">
-    <?php
-    $cats = get_the_category();
-    $cat1 = $cats[0];
-    $cat2 = $cats[1];
-    $cat3 = $cats[2];
-    $cat4 = $cats[3];
-    ?>
     <span class="ripple__effect no-genre <?php if($cat1->parent){
         $parent = get_category($cat1->parent);
         echo $parent->slug;
