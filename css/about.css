@@ -65,7 +65,7 @@ body{
 
 .lineBox{
     margin: 0 auto;
-    width: 101px;
+    width: 110px;
     margin-bottom: 32px;
 }
 .heading_line{
@@ -118,6 +118,8 @@ body{
     text-decoration: none;
 }
 
+.member:hover{
+}
 .member_photo{
     height: 120px;
     width: 120px;
@@ -125,7 +127,7 @@ body{
     margin: 0 auto;
     border-radius: 60px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 
