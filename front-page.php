@@ -18,8 +18,8 @@
     <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 -->
-<a class="button" href="#">
-    <i class="fa fa-chevron-up"></i><span class="ring"></span>
+<a class="button" id = "topbutton" href="#">
+    <i class="fa fa-chevron-up animated rubberBand"></i><span class="ring"></span>
 </a>
 
 <?php get_footer(); ?>

@@ -57,7 +57,8 @@ body{
     border-radius: 100px;
     background: #272727;
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 .button i{
     color: #ffffff;
@@ -65,20 +66,24 @@ body{
     top: 16px;
     left: 20px;
     font-size: 2.4rem;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
 }
-.button:hover .ring {
-    background: rgba(39, 39, 39, 0.4);
+.button .ring {
+    background: rgba(39, 39, 39, 0.2);
     position: absolute;
     z-index:-1;
     border-radius: 100px;
-    height: 84px;
-    width: 84px;
-    top: -10px;  /*A.中心*/
-    left: -10px;  /*A.中心*/
+    height: 64px;
+    width: 64px;
+    top: 0px;  /*A.中心*/
+    left: 0px;  /*A.中心*/
 }
 .button .ring {
-    animation: pulsate 1s ease-out;  /* スピードなど */
+    animation: pulsate 1.5s ease-out;  /* スピードなど */
     animation-iteration-count: infinite;
+/*    animation-delay:5s;*/
 }
 @keyframes pulsate {
     0%   { transform: scale(1, 1); }
