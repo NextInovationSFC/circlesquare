@@ -27,6 +27,7 @@
 @media screen and (min-width: 980px) {
 
 
+
     header{
         text-align: center;
         background-color: #ffffff;
@@ -36,14 +37,17 @@
     }
 
     .header_nav{
-        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
         font-size: 1.5rem;
     }
 
     .header_nav .header_nav-logo{
-        height: 70px;
+        height: 50px;
         display: block;
         padding: 10px;
+        padding-top: 30px;
+        padding-left: 20px;
         margin-left: 50px;
     }
 
@@ -58,7 +62,8 @@
 
     .menu_side-list {
         overflow:hidden;
-        font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
     }
 
     .menu_side-list li{
@@ -67,16 +72,25 @@
 
     .menu_side-list li a{
         height: 41px;
-        width: 130px;
+        width: 80px;
         display: flex;
         text-decoration: none;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         padding-top: 8px;
+        color: #272727;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
     }
 
-    .menu_side-list li a:link,.menu_side-list li a:visited{
-        color: #303030;
+    .menu_side-list li a:hover{
+        color: #BDBDBD;
     }
+/*
+    .menu_side-list li a:link,.menu_side-list li a:visited{
+
+    }
+*/
+/*
 
     .menu_side-list-homeImg{
         margin-top: -5px;
@@ -107,6 +121,10 @@
         -webkit-background-size: 100%;
         background-size: 100%;
     }
+*/
+    input::-webkit-input-placeholder { color:transparent; }
+    input::-moz-placeholder { color:transparent; }
+    input::-moz-placeholder { color:transparent; }
 
     .menu_side-list .menu_side-list-twitter{
         display: none;
@@ -124,16 +142,20 @@
         height: 36px;
         width: 115px;
         display: block;
-        font-family:"游ゴシック", YuGothic;
+        font-family:'Noto Sans', sans-serif;
+        font-weight: 700;
         text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 1.6rem;
         padding: 7px;
+        color: #272727;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+    }
+    .menu_search-list li a:hover{
+        color: #bdbdbd;
     }
 
-    .menu_search-list li a:link,.menu_search-list li a:visited{
-        color: #303030;
-    }
+
 
     .menu_search-tag-sport i{
         color: #D73E6A;
@@ -197,6 +219,7 @@
         top: 12px;
         left: 18px;
         border: 1px solid #FFF;
+        font-weight: 700;
     }
 
 
@@ -208,8 +231,9 @@
     }
 
     .menu_search-keywords{
-        font-weight: bold;
     }
+
+
 
 }
 
@@ -277,7 +301,8 @@
         position: fixed;
         top: 0;
         height: 50px;
-        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
         font-size: 1.5rem;
         width: 100%;
         z-index: 100;
@@ -339,7 +364,8 @@
         height: 36px;
         width: 115px;
         display: block;
-        font-family:"游ゴシック", YuGothic;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
         text-decoration: none;
         font-size: 18px;
         padding-top: 7px;
@@ -374,11 +400,14 @@
     }
 
     .menu_search-logo{
-        margin: 20px auto 10px auto;
-        height: 40px;
-        width: 115px;
+        margin: 40px auto 10px auto;
         display: block;
-        background: url(../img/search_logo.png) no-repeat left top;
+        font-family: 'Nunito',sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 3.2rem;
+        letter-spacing: 4px;
         -webkit-background-size: 100%;
         background-size: 100%;
     }
@@ -439,7 +468,6 @@
         margin-right: 5%;
         padding: 0 2%;
         color: #ffffff;
-        font-weight: bold;
     }
 
 
@@ -484,7 +512,8 @@
     .menu_side-list{
         list-style: none;
         padding-left: 0;
-        font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
     }
 
     .menu_side-list li{
@@ -508,7 +537,9 @@
         width: 130px;
         display: flex;
         text-decoration: none;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        line-height: 24px;
         padding-top: 12px;
         margin-left: 15px;
     }
@@ -522,7 +553,7 @@
     }
 
     .menu_side-list-homeImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -532,7 +563,7 @@
     }
 
     .menu_side-list-aboutImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -542,7 +573,7 @@
     }
 
     .menu_side-list-contactImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -552,7 +583,7 @@
     }
 
     .menu_side-list-twitterImg{
-        margin-top: -5px;
+        margin-top: -4px;
         margin-right: 8px;
         height: 30px;
         width: 30px;
@@ -573,7 +604,8 @@ footer {
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: brandonBold, 'ヒラギノ角ゴ Pro W6';
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
     background-color: #fff;
     color: #bdbdbd;
@@ -608,7 +640,7 @@ footer a {
     display: inline-block;
     height: 44px;
     color: #bdbdbd;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-decoration: none;
     margin-right: 15px;
 }
@@ -619,14 +651,13 @@ footer a {
 }
 
 
-
 .footer__nav__policy {
     display: flex;
     justify-content: center;
+    margin-left: 15px;
 }
 
 .footer__nav .footer__nav__policy li {
-    font-weight: bold;
     padding: 8px;
     text-align: center;
 }
@@ -639,11 +670,20 @@ footer a {
     text-decoration: none;
 }
 
-
+.footer__nav .footer__nav__policy li a {
+    display: inline-block;
+    height: 32px;
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.footer_size{
+    font-size: 1.6rem;
+}
 .copyright {
     text-align: center;
     font-size: 2.0rem;
-    font-family: "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
+    font-family: 'Nunito','Noto Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 0.3rem;
     font-size: 1rem;
@@ -655,6 +695,19 @@ footer a {
 .footer__nav .footer__nav__policy li:first-child {
     display: none;
 }
+
+.verticalLine{
+    background-color:#bdbdbd;
+    width:2px;
+    height:28px;
+    border-radius: 1px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.privacy{
+    padding-right: 0px;
+}
+
 
 @media screen and (min-width:480px) {
     /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
@@ -669,13 +722,14 @@ footer a {
     footer{
         padding-left: 52px;
         padding-right: 52px;
+        margin-top: 64px;
     }
     .footer__nav .footer__nav__main {
         justify-content: flex-end;
     }
 
     .footer__nav .footer__nav__main li {
-        margin-right: 20px;
+        margin-right: 0px;
     }
     .footer__nav .footer__nav__main li:first-child {
         display: block;
@@ -687,12 +741,14 @@ footer a {
     .footer__nav__policy {
         display: flex;
         justify-content: flex-end;
+        margin-left: 0;
     }
     .footer__nav .footer__nav__policy li:first-child {
         display: block;
         margin-right: auto;
         padding: 0;
     }
+
 
 
 }

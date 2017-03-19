@@ -7,8 +7,9 @@ body{
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    background: #f9f9f9;
-    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro';
+    background: #fcfcfc;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
 }
 /*---contact---*/
 /**--コンタクト--**/
@@ -23,8 +24,7 @@ body{
 
 
 .heading{
-/*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
     background: #272727;
@@ -32,10 +32,11 @@ body{
     height: 44px;
     line-height: 44px;
     width: 100%;
+    font-weight: 700;
 }
 
 .contact{
-    background: #f9f9f9;
+    background: #fcfcfc;
     color: #272727;
     padding: 16px;
 }
@@ -111,6 +112,12 @@ body{
 
 input[type="submit"]
 {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input[type="submit"]
+{
     border: none;
     font-size: 1.8rem;
     background: #272727;
@@ -157,7 +164,6 @@ input[type="submit"]
 }
 @media screen and (min-width:1024px) {
     .heading{
-        /*    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", ".HiraKakuInterface-W1";*/
         font-weight: bold;
         font-size: 2.5rem;
         text-align: left;
@@ -173,6 +179,7 @@ input[type="submit"]
         border-bottom: 3px solid #272727;
     }
     .contact{
+        background: #fcfcfc;
         padding-left: 188px;
         padding-right: 188px;
         padding-top: 32px;

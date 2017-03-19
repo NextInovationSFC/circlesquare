@@ -9,7 +9,8 @@ html {
 body{
     box-sizing: border-box;
     background: #FFFFFF;
-    font-family: 'ヒラギノ角ゴ Pro W6';
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
@@ -41,6 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .container{
     padding: 16px;
+    background: #FFFFFF;
 }
 
 /*概要！*/
@@ -50,13 +52,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .title__name{
     font-size: 2.8rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .random_tags_parent{
     margin-top: 12px;
     font-size: 1.2rem;
-    color: #a9a9a9;
+    color: #bdbdbd;
 }
 
 .sports i{
@@ -312,11 +314,12 @@ h1,h2,h3,h4,h5,h6 {
 
 
     .title__name{
-        font-size: 3.2rem;
-        font-weight: 600;
+        font-size: 3.6rem;
+        font-weight: 400;
     }
 
     .random_tags_parent{
+        font-size: 1.8rem;
         margin-top: 24px;
     }
 
@@ -337,38 +340,37 @@ h1,h2,h3,h4,h5,h6 {
 
 
     .about p{
-        font-size: 1.5rem;
-        line-height: 30px;
+        font-size: 2.4rem;
+        line-height: 48px;
         letter-spacing: 1px;
         margin-top: 32px;
     }
 
-
     .contents h2{
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         display: inline-block;
         border-left: none;
-        border-right: #5ac8dc solid 2px;
+        border-right: #5ac8dc solid 3px;
     }
     .locationAndDate h2{
         text-align: right;
         padding-right: 32px;
         border-left: none;
-        border-right: #e63c6e solid 2px;
+        border-right: #e63c6e solid 3px;
     }
 
     .number h2{
         text-align: right;
         padding-right: 32px;
         border-left: none;
-        border-right: #78c850 solid 2px;
+        border-right: #78c850 solid 3px;
     }
 
     .cost h2{
         text-align: right;
         padding-right: 32px;
         border-left: none;
-        border-right: #fac81e solid 2px;
+        border-right: #fac81e solid 3px;
     }
 
     .schedule h2{
@@ -384,28 +386,30 @@ h1,h2,h3,h4,h5,h6 {
     .line{
         display: block;
         width: 64px;
-        height: 2px;
+        height: 3px;
         border: 0;
         margin: 0 auto;
     }
     .blue {
+        margin-top: 12px;
+        margin-bottom: 32px;
         background-color: #5ac8dc;
     }
 
 
     .contents p{
         display: inline;
-        font-size: 1.4rem;
+        font-size: 2.4rem;
         padding-top: 16px;
         padding-left: 32px;
     }
     .contentsBox{
         padding-left: 64px;
-        border-top: 1px solid #a9a9a9;
-        border-bottom: 1px solid #a9a9a9;
+/*        border-top: 1px solid #a9a9a9;*/
+/*        border-bottom: 1px solid #a9a9a9;*/
         padding-top: 16px;
-        padding-bottom: 32px;
-        margin-top: 32px;
+        padding-bottom: 16px;
+        margin-top: 0px;
     }
 
     .shiki{
@@ -423,6 +427,7 @@ h1,h2,h3,h4,h5,h6 {
 
     .shiki p{
         padding-left: 0px;
+        font-size: 2.0rem;
     }
     .spring{
         margin-top: 32px;

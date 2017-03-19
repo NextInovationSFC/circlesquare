@@ -6,6 +6,7 @@
     <title>CircleSquare</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Nunito:400,700" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/headerandfooter.css">
 <!--    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.mmenu.all.css" type="text/css"/>-->
@@ -86,7 +87,7 @@
 
                 <nav class="cd-primary-nav menu_search">
                     <ul class="menu_search-list">
-                        <li class="menu_search-logo"></li>
+                        <li class="menu_search-logo">Search</li>
                         <li>
                             <form class="menu_search-form" method="get"  action="<?php bloginfo('home'); ?>">
                                 <input type="text" value="" name="s" id="s" class="menu_search-keywords" placeholder="検索キーワードを入力 (ex.テニス)">

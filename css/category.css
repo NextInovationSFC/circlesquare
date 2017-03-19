@@ -3,7 +3,8 @@ html {
 }
 body{
     box-sizing: border-box;
-    font-family: "Helvetica Neue","小塚ゴシック";
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
     background: #EBEFF1;
 }
 header{

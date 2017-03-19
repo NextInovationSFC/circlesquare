@@ -1,10 +1,11 @@
-/*　モバイル（iPhone,Android）に関するCSSを記述する*/
+/*モバイル(iPhone,Androidに関するCSSを記述する*/
 html {
     font-size: 62.5%;
 }
 body{
     box-sizing: border-box;
-    font-family: "ヒラギノ角ゴ ProN W6","ヒラギノ角ゴ Pro W6";
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 400;
     background: #F9F9F9;
 }
 /*home*/
@@ -48,13 +49,13 @@ body{
     top: 50%;
 }
 @media screen and (min-width:480px) {
-    /*　モバイル（iPhone,Android）を傾けたときのCSSを記述する*/
+    /*モバイル(iPhone,Androidを傾けたときのCSSを記述する*/
 }
-@media screen and (min-width:768px) and ( max-width:1024px) {
-    /*　iPadのCSSを記述する*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*iPadのCSSを記述する*/
 }
 @media screen and (min-width:1024px) {
-    /*　PC用のCSSを記述する　*/
+    /*PC用のCSSを記述する*/
     /*toppage-btn*/
     .pageTop-btn {
         width: 64px;

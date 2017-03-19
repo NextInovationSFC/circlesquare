@@ -3,8 +3,8 @@ html{
 }
 body{
     box-sizing: border-box;
-    font-family: "Helvetica Neue","小塚ゴシック";
-    background: #ffffff;
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
 }
 
 /*---policy---*/
@@ -30,8 +30,8 @@ body{
     text-align: center;
     font-size: 1.4rem;
     letter-spacing: 2px;
-    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W6', sans-serif;
-    font-weight: normal;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
     line-height: 30px;
     position: absolute;
     left: 0;
@@ -43,22 +43,23 @@ body{
 
 .english{
     font-size: 3rem;
-    font-family: brandonBold;
-    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
 }
 
 
 /*　モバイル（iPhone,Android）に関するCSSを記述する*/
 .about{
-  padding: 16px;
+    padding: 16px;
+    background-color: #ffffff;
 }
 
 .about_heading{
-    font-family: brandonBold;
-    font-size: 3.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
     text-align: center;
-    margin-top: 16px;
-    font-weight: normal;
+    margin-top: 24px;
 }
 
 
@@ -66,7 +67,7 @@ body{
 .lineBox{
     margin: 0 auto;
     width: 110px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 .heading_line{
     text-align: center;
@@ -80,17 +81,18 @@ body{
 
 
 .about_description{
-    font-size: 1.2rem;
-    line-height: 24px;
-    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
 }
 
 .member_heading{
-    font-family: brandonBold;
-    font-size: 3.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
     text-align: center;
-    margin-top: 16px;
-    font-weight: normal;
+    margin-top: 32px;
 }
 
 
@@ -132,9 +134,10 @@ body{
 
 
 .name{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
     text-align: center;
     font-size: 1.8rem;
-    font-weight: bold;
     color: #272727;
 }
 
@@ -142,17 +145,19 @@ body{
     margin-top: 8px;
     text-align: center;
     font-size: 1.2rem;
-    font-family: brandonRegular;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     color: #7b7b7b;
 }
 
 
 .about-position{
-    margin-top: 8px;
+    margin-top: 4px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 5px;
-    font-family: brandonBold;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     color: #272727;
     margin-bottom: 32px;
 }
@@ -231,8 +236,6 @@ body{
         text-align: center;
         font-size: 2.5rem;
         letter-spacing: 2px;
-        font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W6', sans-serif;
-        font-weight: normal;
         line-height: 50px;
         position: absolute;
         left: 0;
@@ -243,16 +246,14 @@ body{
     }
 
     .english{
-        font-size: 5rem;
-        font-family: brandonBold;
-        font-weight: normal;
+        font-size: 3.2rem;
     }
 
 
 
     .about_heading{
-        font-size: 3.6rem;
-        margin-top: 16px;
+        margin-top: 48px;
+        font-size: 2.8rem;
     }
     .about{
         padding-right: 188px;
@@ -260,9 +261,8 @@ body{
     }
 
     .about_description{
-        font-size: 1.6rem;
-        line-height: 32px;
-        font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+        font-size: 1.8rem;
+        line-height: 36px;
     }
 
 
@@ -277,6 +277,10 @@ body{
         display: block;
         text-decoration: none;
     }
+    .member_heading{
+        margin-top: 48px;
+        font-size: 2.8rem;
+    }
     .member_photo{
         height: 144px;
         width: 144px;
@@ -285,15 +289,13 @@ body{
     .name{
         text-align: center;
         font-size: 2.2rem;
-        font-weight: bold;
         color: #272727;
     }
 
     .about-circle{
         margin-top: 8px;
         text-align: center;
-        font-size: 1.4rem;
-        font-family: brandonRegular;
+        font-size: 1.2rem;
         color: #7b7b7b;
     }
 
@@ -301,9 +303,8 @@ body{
     .about-position{
         margin-top: 8px;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         padding: 5px;
-        font-family: brandonBold;
         color: #272727;
         margin-bottom: 32px;
     }
