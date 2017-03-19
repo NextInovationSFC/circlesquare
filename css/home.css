@@ -21,6 +21,7 @@ body{
     visibility:hidden;
 }
 /*toppage-btn*/
+/*
 .pageTop-btn {
     width: 64px;
     margin: 0 auto;
@@ -48,6 +49,52 @@ body{
     font-size: 2.4rem;
     top: 50%;
 }
+*/
+
+.button {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    background: #272727;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.button i{
+    color: #ffffff;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-size: 2.4rem;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}
+.button .ring {
+    background: rgba(39, 39, 39, 0.2);
+    position: absolute;
+    z-index:-1;
+    border-radius: 100px;
+    height: 64px;
+    width: 64px;
+    top: 0px;  /*A.中心*/
+    left: 0px;  /*A.中心*/
+}
+.button .ring {
+    animation: pulsate 1.5s ease-out;  /* スピードなど */
+    animation-iteration-count: infinite;
+/*    animation-delay:5s;*/
+}
+@keyframes pulsate {
+    0%   { transform: scale(1, 1); }
+    50%  { opacity: 1; }
+    100% { transform: scale(2, 2); opacity: 0.0; }
+}
+
+
+
 @media screen and (min-width:480px) {
     /*モバイル(iPhone,Androidを傾けたときのCSSを記述する*/
 }
@@ -57,12 +104,16 @@ body{
 @media screen and (min-width:1024px) {
     /*PC用のCSSを記述する*/
     /*toppage-btn*/
-    .pageTop-btn {
+    .button{
+        display: none;
+    }
+/*
+    .button {
         width: 64px;
         margin: 0 auto;
         margin-bottom: 32px;
     }
-    .pageTop-btn a {
+    .button a {
         display: block;
         z-index: 999;
         border-radius: 100%;
@@ -77,12 +128,13 @@ body{
         box-shadow: 0 2px 10px 0px rgba(0,0,0,0.26);
         display: none;
     }
-    .pageTop-btn a:hover {
+    .butotn a:hover {
         text-decoration: none;
         opacity: 0.7;
     }
-    .pageTop-btn i{
+    .button i{
         font-size: 2.4rem;
         top: 50%;
     }
+*/
 }
