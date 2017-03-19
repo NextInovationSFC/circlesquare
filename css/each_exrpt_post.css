@@ -27,7 +27,7 @@
 .ripple__effect.event { background: #5AC8DC;}
 .ripple__effect.social-activity  { background: #FAC81E;}
 .ripple__effect.hobby{background: #78C850;}
-.ripple__effect.no-genre{background: #272727;}
+.ripple__effect.no-genre{background: rgba(39,39,39,0.2);}
 
 /* classが付与されたらアニメーションを実行 */
 .ripple__effect.is-show {
