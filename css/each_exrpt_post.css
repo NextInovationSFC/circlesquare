@@ -1,4 +1,52 @@
 /*　モバイル（iPhone,Android）に関するCSSを記述する*/
+
+/*ここからリプルエフェクト*/
+/* クリックできる要素 */
+.ripple {
+    /* 必須 */
+    overflow: hidden;
+    position: relative;
+}
+
+/* エフェクト要素 */
+.ripple__effect {
+    /* 値の変更はエフェクト形体・サイズ・スピードに影響する */
+    width: 300px;
+    height: 300px;
+
+    /* 必須 */
+    position: absolute;
+    border-radius: 100%;
+    pointer-events: none;
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* エフェクト要素の色を指定 */
+.ripple__effect.sports   { background: #E63C6E;}
+.ripple__effect.event { background: #5AC8DC;}
+.ripple__effect.social-activity  { background: #FAC81E;}
+.ripple__effect.hobby{background: #78C850;}
+.ripple__effect.no-genre{background: #272727;}
+
+/* classが付与されたらアニメーションを実行 */
+.ripple__effect.is-show {
+    animation: ripple 0.5s ease-out;
+}
+
+/* アニメーションの定義 */
+@keyframes ripple {
+    from {
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+/*ここまでがリプルエフェクト*/
 .wrap-col{
     height: auto;
     position:relative;
@@ -110,7 +158,7 @@
     color: #78C850;
 }
 .no-genre i{
-    color: #272727;
+    color: rgba(39,39,39,0.2);
 }
 @media screen and (min-width:480px) {
     /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/

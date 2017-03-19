@@ -8,8 +8,6 @@ $(function(){
             //---- 画面が80pxより上なら、ボタンを表示しない
         }
     });
-
-
     // ◇ボタンをクリックしたら、スクロールして上に戻る
     topBtn.click(function(){
         $('body,html').animate({

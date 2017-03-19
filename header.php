@@ -36,6 +36,7 @@
     <?php endif; ?>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/topbutton.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/ripple.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jQuery.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/script.js" ></script>

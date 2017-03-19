@@ -1,5 +1,26 @@
 <!--POST BOX-->
-<li class="col-1-4">
+<li class="col-1-4 ripple" id="">
+    <span class="ripple__effect no-genre <?php if($cat1->parent){
+        $parent = get_category($cat1->parent);
+        echo $parent->slug;
+    }else{
+        echo $cat1->slug;
+    } ?> <?php if($cat2->parent){
+        $parent = get_category($cat2->parent);
+        echo $parent->slug;
+    }else{
+        echo $cat2->slug;
+    } ?> <?php if($cat3->parent){
+        $parent = get_category($cat3->parent);
+        echo $parent->slug;
+    }else{
+        echo $cat3->slug;
+    } ?> <?php if($cat4->parent){
+        $parent = get_category($cat4->parent);
+        echo $parent->slug;
+    }else{
+        echo $cat4->slug;
+    } ?>"></span>
     <?php $postImgSrc = wp_get_attachment_image_src(post_custom('image'), false);?>
     <a href="<?php the_permalink();?>" >
         <div class="wrap-col">
