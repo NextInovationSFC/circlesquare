@@ -63,7 +63,7 @@ body{
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
     height: 36px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
@@ -80,7 +80,7 @@ body{
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
     height: 36px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
@@ -98,7 +98,7 @@ body{
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
     height: 160px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
@@ -202,20 +202,20 @@ input[type="submit"]
 
 
     .contact_name{
-        width: 600px;
+        width: 100%;
         height: 44px;
         font-size: 1.5rem;
     }
 
     .contact_email{
-        width: 600px;
+        width: 100%;
         height: 44px;
         font-size: 1.5rem;
     }
 
 
     .contact_message{
-        width: 600px;
+        width: 100%;
         height: 180px;
         font-size: 1.5rem;
     }
