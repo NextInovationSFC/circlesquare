@@ -59,7 +59,7 @@
             <p class="name">村松 明日香</p>
             <p class="about-circle">Keio Collection</p>
             <hr class="line blue">
-            <p class="about-position">Designer Leader</p>
+            <p class="about-position">Designer</p>
         </a>
 
 
