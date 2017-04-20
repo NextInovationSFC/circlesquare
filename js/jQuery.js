@@ -22,4 +22,7 @@ function BoxnonChecked(){
         $('input[name="catnum[]"]').prop("checked",false);
     });
 }
-
+//page me スクロールしたら読み込む
+$(document).ready(function() {
+    $(".random_grid").pageme();
+});
