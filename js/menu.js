@@ -50,8 +50,18 @@ $(function () {
     var $body = $('body');
     $('#js__sideMenuBtn').on('click', function () {
         $body.toggleClass('side-open');
-        $('#js__overlay').on('click', function () {
+        document.getElementById("menu").style.display="block";
+        $(window).on('touchmove.noScroll', function(e) {
+            e.preventDefault();
+        });
+        $('#js__overlay').bind('touchstart', function() {
             $body.removeClass('side-open');
+            
+            setTimeout(function(){
+                document.getElementById("menu").style.display="none";
+            },500);
+            $(window).off('.noScroll');
         });
     });
+
 });

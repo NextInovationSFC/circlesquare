@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <meta name="description" content="SFC新入生のためのサークル情報サイト。スポーツ、イベント、社会活動、趣味の４つのカテゴリ分けされた唯一のSFCサークル情報を公開中。">
+    
     <title>Circle Square ［サークルスクエア］|  SFC生のためのサークル情報サイト</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -76,9 +77,7 @@
                     <li><a href="https://twitter.com/circle_sq_sfc" class="menu_side-list-twitter"><div class="menu_side-list-twitterImg"></div>Twitter</a></li>
                 </ul>
             </nav>
-
-            <div class="header_wrapper">
-                <header class="header clearfix">
+            <header class="header clearfix">
                     <div class="header_nav">
                         <a class="header_nav-menuBtn" id="js__sideMenuBtn"></a>
                         <a class="header_nav-searchBtn cd-primary-nav-trigger "></a>
@@ -86,8 +85,8 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Circle Square" class="header_nav-logo">
                         </a>
                     </div>
-                </header>
-
+            </header>
+            <div class="header_wrapper">
                 <nav class="cd-primary-nav menu_search">
                     <ul class="menu_search-list">
                         <li class="menu_search-logo">Search</li>
@@ -102,6 +101,12 @@
                         <li><a href="<?php echo get_category_link('49');?>" class="menu_search-tag-social"><i class="fa fa-tags " aria-hidden="true"></i>社会活動</a></li>
                         <li><a href="<?php echo get_category_link('39');?>" class="menu_search-tag-hobby"><i class="fa fa-tags " aria-hidden="true"></i>趣味</a></li>
                         <li><a href="<?php echo get_category_link('36');?>" class="menu_search-tag-event"><i class="fa fa-tags " aria-hidden="true"></i>イベント</a></li>
+<!--
+                        <li><a href="<?php echo get_category_link('8');?>" class="menu_search-tag-sport"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ</a></li>
+                        <li><a href="<?php echo get_category_link('34');?>" class="menu_search-tag-social"><i class="fa fa-tags " aria-hidden="true"></i>社会活動</a></li>
+                        <li><a href="<?php echo get_category_link('35');?>" class="menu_search-tag-hobby"><i class="fa fa-tags " aria-hidden="true"></i>趣味</a></li>
+                        <li><a href="<?php echo get_category_link('20');?>" class="menu_search-tag-event"><i class="fa fa-tags " aria-hidden="true"></i>イベント</a></li>
+-->
                     </ul>
                 </nav>
 
