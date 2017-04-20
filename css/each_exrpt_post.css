@@ -1,262 +1,42 @@
-/*　モバイル（iPhone,Android）に関するCSSを記述する*/
-
-/*ここからリプルエフェクト*/
-/* クリックできる要素 */
-.ripple {
-    /* 必須 */
-    overflow: hidden;
-    position: relative;
+.ripple{overflow:hidden;position:relative;}
+.ripple__effect{width:300px;height:300px;position:absolute;border-radius:100%;pointer-events:none;transform:scale(0);opacity:0;}
+.ripple__effect.sports{background:#E63C6E;}
+.ripple__effect.event{background:#5AC8DC;}
+.ripple__effect.social-activity{background:#FAC81E;}
+.ripple__effect.hobby{background:#78C850;}
+.ripple__effect.no-genre{background:rgba(39,39,39,0.2);}
+.ripple__effect.is-show{animation:ripple 0.5s ease-out;}
+@keyframes ripple{from{opacity:1;}
+to{transform:scale(2);opacity:0;}
 }
-
-/* エフェクト要素 */
-.ripple__effect {
-    /* 値の変更はエフェクト形体・サイズ・スピードに影響する */
-    width: 300px;
-    height: 300px;
-
-    /* 必須 */
-    position: absolute;
-    border-radius: 100%;
-    pointer-events: none;
-    transform: scale(0);
-    opacity: 0;
+.wrap-col{height:auto;position:relative;width:100%;}
+.random{padding:0 0 32px 0;display:block;width:100%;margin:0 auto;}
+.random_grid{margin:0 auto;}
+.random_grid li{display:inline-block;width:87%;height:auto;background-color:#ffffff;border-radius:8px;margin:32px 16px 0 16px;box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);transition-duration:0.2s;}
+.random_grid li:hover{box-shadow:0 2px 20px 2px rgba(0,0,0,0.12);}
+.random_grid a{text-decoration:none;}
+.random_icon{position:relative;width:100%;height:236px;margin-bottom:16px;border-radius:8px 8px 0 0/8px 8px 0 0;}
+.random_content{position:relative;width:100%;height:auto;}
+.random_tags_parent{position:relative;display:inline-block;height:auto;width:100%;font-size:1.2rem;color:#bdbdbd;text-align:left;padding:0 0 0 16px;}
+.random_name{position:relative;display:inline-block;box-sizing:border-box;height:auto;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%;padding:0 16px 0 16px;text-align:left;font-size:2.4rem;font-family:'Noto Sans', sans-serif;font-weight:400;color:#272727;margin-bottom:15px;}
+.random_description{position:relative;display:inline-block;white-space:nowrap;width:87%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:1.4rem;color:#7B7B7B;padding:16px 16px 16px 16px;padding-left:0px;text-align:left;font-family:'Noto Sans', sans-serif;font-weight:400;}
+.sports,.evevt,.social-activity,.hobby{margin:0 2% 0 0;font-family:'Noto Sans', sans-serif;font-weight:400;}
+.sports i{color:#E63C6E;}
+.event i{color:#5AC8DC;}
+.social-activity i{color:#FAC81E;}
+.hobby i{color:#78C850;}
+.no-genre i{color:rgba(39,39,39,0.2);}
+@media screen and (min-width:480px){}
+@media screen and (min-width:768px) and (max-width:1024px){}
+@media screen and (min-width:1024px){.wrap-col{height:auto;position:relative;}
+.random{padding:0 0 32px 0;display:block;width:100%;margin:0 auto;}
+.random_grid{margin:0 auto;}
+.random_grid li{display:inline-block;width:343px;height:auto;background-color:#ffffff;box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);border-radius:8px;margin:32px 16px 0 16px;}
+.random_grid a{text-decoration:none;}
+.random_grid li:hover{}
+.random_icon{position:relative;width:100%;height:236px;margin-bottom:16px;border-radius:8px 8px 0 0/8px 8px 0 0;}
+.random_content{width:100%;height:auto;}
+.random_tags_parent{position:relative;width:100%;font-size:1.2rem;text-align:left;padding:0 0 0 16px;}
+.random_name{position:relative;width:100%;height:auto;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;box-sizing:border-box;padding:0 16px 0 16px;text-align:left;font-size:2.4rem;font-family:'Noto Sans', sans-serif;font-weight:400;color:#272727;margin-bottom:15px;}
+.random_description{position:relative;white-space:nowrap;width:87%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:1.4rem;padding:16px 16px 16px 16px;padding-left:0px;text-align:left;font-family:'Noto Sans', sans-serif;font-weight:400;}
 }
-
-/* エフェクト要素の色を指定 */
-.ripple__effect.sports   { background: #E63C6E;}
-.ripple__effect.event { background: #5AC8DC;}
-.ripple__effect.social-activity  { background: #FAC81E;}
-.ripple__effect.hobby{background: #78C850;}
-.ripple__effect.no-genre{background: rgba(39,39,39,0.2);}
-
-/* classが付与されたらアニメーションを実行 */
-.ripple__effect.is-show {
-    animation: ripple 0.5s ease-out;
-}
-
-/* アニメーションの定義 */
-@keyframes ripple {
-    from {
-        opacity: 1;
-    }
-    to {
-        transform: scale(2);
-        opacity: 0;
-    }
-}
-
-
-/*ここまでがリプルエフェクト*/
-.wrap-col{
-    height: auto;
-    position:relative;
-    width: 100%;
-}
-.random {
-    padding: 0 0 32px 0;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-.random_grid {
-    margin: 0 auto;
-}
-.random_grid li {
-    display: inline-block;
-    width: 87%;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin: 32px 16px 0 16px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    transition-duration: 0.2s;
-}
-
-.random_grid li:hover{
-    box-shadow: 0 2px 20px 2px rgba(0,0,0,0.12);
-}
-
-.random_grid a{
-    text-decoration: none;
-}
-
-.random_icon {
-    position: relative;
-    width:100%;
-    height:236px;
-    margin-bottom: 16px;
-    border-radius: 8px 8px 0 0 / 8px 8px 0 0;
-}
-
-.random_content{
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.random_tags_parent{
-    position:relative;
-    display: inline-block;
-    height: auto;
-    width: 100%;
-    font-size: 1.2rem;
-    color: #bdbdbd;
-    text-align: left;
-    padding: 0 0 0 16px;
-}
-
-.random_name {
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    height: auto;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    width: 100%;
-    padding: 0 16px 0 16px;
-    text-align: left;
-    font-size: 2.4rem;
-    font-family:'Noto Sans', sans-serif;
-    font-weight: 400;
-    color: #272727;
-    margin-bottom: 15px;
-}
-
-
-.random_description {
-    position:relative;
-    display: inline-block;
-    white-space: nowrap;
-    width: 87%;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    font-size: 1.4rem;
-    color: #7B7B7B;
-    padding: 16px 16px 16px 16px;
-    padding-left: 0px;
-    text-align: left;
-    font-family:'Noto Sans', sans-serif;
-    font-weight: 400;
-}
-
-/*スラッグがクラス名になる*/
-.sports,.event,.social-activity,.hobby{
-    margin: 0 2% 0 0;
-    font-family:'Noto Sans', sans-serif;
-    font-weight: 400;
-}
-.sports i{
-    color: #E63C6E;
-}
-.event i{
-    color: #5AC8DC;
-}
-.social-activity i{
-    color: #FAC81E;
-}
-
-.hobby i{
-    color: #78C850;
-}
-.no-genre i{
-    color: rgba(39,39,39,0.2);
-}
-@media screen and (min-width:480px) {
-    /*モバイル(iPhone,Android)を傾けたときのCSSを記述する*/
-
-}
-@media screen and (min-width:768px) and (max-width:1024px) {
-    /*iPadのCSSを記述する*/
-}
-@media screen and (min-width:1024px) {
-    /*PC用のCSSを記述する*/
-    .wrap-col{
-        height: auto;
-        position:relative;
-    }
-
-
-    .random {
-        padding: 0 0 32px 0;
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .random_grid {
-        margin: 0 auto;
-    }
-    .random_grid li {
-        display: inline-block;
-        width: 343px;
-        height: auto;
-        background-color: #ffffff;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-        border-radius: 8px;
-        margin: 32px 16px 0 16px;
-    }
-
-    .random_grid a{
-        text-decoration: none;
-    }
-
-    .random_grid li:hover{
-    }
-    .random_icon {
-        position: relative;
-        width:100%;
-        height:236px;
-        margin-bottom: 16px;
-        border-radius: 8px 8px 0 0 / 8px 8px 0 0;
-    }
-
-    .random_content{
-        width: 100%;
-        height: auto;
-    }
-
-    .random_tags_parent{
-        position:relative;
-        width: 100%;
-        font-size: 1.2rem;
-        text-align: left;
-        padding: 0 0 0 16px;
-    }
-
-    .random_name {
-        position: relative;
-        width: 100%;
-        height: auto;
-        white-space: nowrap;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        box-sizing: border-box;
-        padding: 0 16px 0 16px;
-        text-align: left;
-        font-size: 2.4rem;
-        font-family:'Noto Sans', sans-serif;
-        font-weight: 400;
-        color: #272727;
-        margin-bottom: 15px;
-    }
-
-
-    .random_description {
-        position:relative;
-        white-space: nowrap;
-        width: 87%;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        font-size: 1.4rem;
-        padding: 16px 16px 16px 16px;
-        padding-left: 0px;
-        text-align: left;
-        font-family:'Noto Sans', sans-serif;
-        font-weight: 400;
-    }
-}
-
