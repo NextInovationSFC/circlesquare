@@ -34,7 +34,7 @@
             </div>
             <div class="about_member-card">
 
-                <a class="about_member-daifuku member" href="http://localhost:8888/2017/03/19/">
+                <a class="about_member-daifuku member">
             <img src="<?php echo get_template_directory_uri(); ?>/img/member_daifuku.jpg" alt="" class="member_photo">
             <p class="name">藤木 良祐</p>
             <p class="about-circle">S.A.L.</p>
@@ -43,7 +43,7 @@
 
         </a>
 
-                <a class="about_member-tatsumu member" href="http://localhost:8888/2017/03/19/">
+                <a class="about_member-tatsumu member">
           <img src="<?php echo get_template_directory_uri(); ?>/img/member_tatsumu.jpg" alt="" class="member_photo">
         <p class="name">松井 達夢</p>
         <p class="about-circle">NaDaRe</p>
@@ -54,7 +54,7 @@
 
 
 
-                <a class="about_member-a-chan member" href="http://localhost:8888/2017/03/19/">
+                <a class="about_member-a-chan member">
             <img src="<?php echo get_template_directory_uri(); ?>/img/member_a-chan.jpg" alt="" class="member_photo">
             <p class="name">村松 明日香</p>
             <p class="about-circle">Keio Collection</p>
@@ -63,7 +63,7 @@
         </a>
 
 
-                <a class="about_member-honami member" href="http://localhost:8888/2017/03/19/">
+                <a class="about_member-honami member">
           <img src="<?php echo get_template_directory_uri(); ?>/img/member_honami.jpg" alt="" class="member_photo">
         <p class="name">久保 帆奈美</p>
         <p class="about-circle">TopDogs</p>
@@ -71,7 +71,7 @@
         <p class="about-position">Designer</p>
       </a>
 
-                <a class="about_member-kirimi member" href="http://localhost:8888/2017/03/19/">
+                <a class="about_member-kirimi member">
           <img src="<?php echo get_template_directory_uri(); ?>/img/member_kirimi.jpg" alt="" class="member_photo">
         <p class="name">沼倉 朋哉</p>
         <p class="about-circle">ACOGGYZ</p>
@@ -79,7 +79,7 @@
         <p class="about-position">Engineer</p>
       </a>
 
-                <a class="about_member-yuyu member" href="http://localhost:8888/2017/03/19/">
+                <a class="about_member-yuyu member">
             <img src="<?php echo get_template_directory_uri(); ?>/img/member_yuyu.jpg" alt="" class="member_photo">
             <p class="name">原 有璃</p>
             <p class="about-circle">TopDogs</p>

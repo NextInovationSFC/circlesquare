@@ -64,10 +64,10 @@ body{
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    height: 36px;
+    height: 42px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding-left: 16px;
     margin-top: 12px;
     margin-bottom: 24px;
@@ -81,10 +81,10 @@ body{
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    height: 36px;
+    height: 42px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding-left: 16px;
     margin-top: 12px;
     margin-bottom: 24px;
@@ -102,7 +102,7 @@ body{
     height: 160px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 16px;
     margin-top: 12px;
     margin-bottom: 24px;
@@ -153,6 +153,10 @@ input[type="submit"]
     border: none !important;
 }
 
+span.wpcf7-not-valid-tip{
+    margin-bottom: 30px !important;
+
+}
 
 
 
@@ -220,6 +224,14 @@ input[type="submit"]
         font-size: 1.5rem;
     }
 
+    .wpcf7-validation-errors{
+        background: #E53935;
+        border-radius: 20px;
+
+    }
+    .wpcf7-mail-sent-ok{
+        border-radius: 20px;
+    }
 
 
     input[type="submit"]
@@ -234,6 +246,12 @@ input[type="submit"]
         cursor: pointer;
         display: block;
         margin: 0 auto;
+        box-shadow: 0 10px 10px 2px rgba(0,0,0,0.12);
+        transition-duration: 0.2s;
     }
 
+    input[type="submit"]:hover
+    {
+        box-shadow: 0 20px 20px 2px rgba(0,0,0,0.12);
+    }
 }
