@@ -7,7 +7,6 @@
         <div class="search-result">
             <div class="search-result-text">
                 <?php if($s){ ?>「<?php htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); } ?>」の検索結果(全<?php echo $wp_query->found_posts; ?>件)
-
             </div>
         </div>
 
