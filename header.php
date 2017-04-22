@@ -97,16 +97,16 @@
                             </form>
                         </li>
                         <li >タグ検索</li>
+<!--
                         <li><a href="<?php echo get_category_link('59');?>" class="menu_search-tag-sport"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ</a></li>
                         <li><a href="<?php echo get_category_link('49');?>" class="menu_search-tag-social"><i class="fa fa-tags " aria-hidden="true"></i>社会活動</a></li>
                         <li><a href="<?php echo get_category_link('39');?>" class="menu_search-tag-hobby"><i class="fa fa-tags " aria-hidden="true"></i>趣味</a></li>
                         <li><a href="<?php echo get_category_link('36');?>" class="menu_search-tag-event"><i class="fa fa-tags " aria-hidden="true"></i>イベント</a></li>
-<!--
+-->
                         <li><a href="<?php echo get_category_link('8');?>" class="menu_search-tag-sport"><i class="fa fa-tags" aria-hidden="true"></i>スポーツ</a></li>
                         <li><a href="<?php echo get_category_link('34');?>" class="menu_search-tag-social"><i class="fa fa-tags " aria-hidden="true"></i>社会活動</a></li>
                         <li><a href="<?php echo get_category_link('35');?>" class="menu_search-tag-hobby"><i class="fa fa-tags " aria-hidden="true"></i>趣味</a></li>
                         <li><a href="<?php echo get_category_link('20');?>" class="menu_search-tag-event"><i class="fa fa-tags " aria-hidden="true"></i>イベント</a></li>
--->
                     </ul>
                 </nav>
 

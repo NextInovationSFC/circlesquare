@@ -12,9 +12,8 @@
 
         <div class="random">
             <div id="random" class="random_grid">
-                <?php $cat_id = get_query_var('cat');
-                      $q = 'cat=' . $cat_id . '&orderby=rand' ;?>
-                <?php query_posts($q);?>
+                <?php $cat_id = get_query_var('cat');?>
+                <?php query_posts('cat=' . $cat_id . '&orderby=rand');?>
                 <?php if(have_posts()):while(have_posts()):the_post(); get_template_part('each_exrpt_post');?>
                 <?php endwhile; ?>
                 <?php else : ?>
