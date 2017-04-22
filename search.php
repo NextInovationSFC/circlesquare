@@ -12,6 +12,7 @@
 
         <div class="random">
             <div id="random" class="random_grid">
+                <?php query_posts('s=' . $s . '&orderby=rand');?>
                 <?php if(have_posts()):while(have_posts()):the_post(); get_template_part('each_exrpt_post');?>
                 <?php endwhile; ?>
                 <?php else : ?>
